@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema principal de la app -->
+    <style name="Theme.Ampara" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Aquí puedes agregar personalizaciones opcionales -->
+    </style>
+
+</resources>
