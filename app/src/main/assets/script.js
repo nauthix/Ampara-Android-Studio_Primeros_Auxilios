@@ -10,6 +10,17 @@ const CONFIG = {
     'desmayo', 'convulsiones', 'glosario', 'sangrado-nasal', 'intoxicacion'
   ],
   sectionMap: ['rcp', 'heridas', 'quemaduras', 'fracturas', 'emergencias', 'botiquin', 'glosario', 'envenenamiento'],
+  // Qué botones de audio tiene cada sección de contenido
+  sectionAudioMap: {
+    'rcp':            ['rcp'],
+    'heridas':        ['heridas-leves', 'heridas-graves'],
+    'quemaduras':     ['quemaduras-leves', 'quemaduras-graves'],
+    'fracturas':      ['fracturas-cerradas', 'fracturas-abiertas'],
+    'envenenamiento': ['envenenamiento'],
+    'emergencias':    ['infarto', 'asfixia', 'desmayo', 'convulsiones', 'sangrado-nasal', 'intoxicacion'],
+    'botiquin':       [],
+    'glosario':       ['glosario']
+  },
   buttonTexts: {
     'rcp': {
       play: { es: 'Reproducir RCP', qu: 'RCP Waqyachiy', ay: "RPC Ist'ayaña" },
@@ -90,9 +101,19 @@ class ScrollManager {
     this.mainScreen = dom.get('main-screen');
     this.sectionsList = dom.get('sections-list');
     this.sectionContent = dom.get('section-content');
-    
+
     // Hacer que el body no tenga scroll
     this.disableBodyScroll();
+
+    // Scroll-to-top: mostrar botón al bajar más de 250px
+    const scrollTopBtn = dom.get('scroll-top-btn');
+    if (this.mainScreen && scrollTopBtn) {
+      this.mainScreen.addEventListener('scroll', () => {
+        scrollTopBtn.classList.toggle('visible', this.mainScreen.scrollTop > 250);
+      }, { passive: true });
+
+      scrollTopBtn.addEventListener('click', () => this.scrollToTop());
+    }
   }
 
   // Deshabilitar scroll del body
@@ -118,14 +139,12 @@ class ScrollManager {
   saveMenuScroll() {
     if (this.mainScreen) {
       this.menuScrollPosition = this.mainScreen.scrollTop;
-      console.log('Guardando scroll del menú:', this.menuScrollPosition);
     }
   }
 
   // Restaurar posición del scroll del menú
   restoreMenuScroll() {
     if (this.mainScreen && this.menuScrollPosition >= 0) {
-      console.log('Restaurando scroll del menú:', this.menuScrollPosition);
       this.mainScreen.scrollTop = this.menuScrollPosition;
     }
   }
@@ -185,6 +204,15 @@ class AudioManager {
   }
 
   play(section, lang) {
+    // Avisar si el volumen del sistema está en 0
+    if (typeof AndroidAudio !== 'undefined' && typeof AndroidAudio.getSystemVolume === 'function') {
+      const vol = AndroidAudio.getSystemVolume();
+      const current = parseInt(vol.split('/')[0], 10);
+      if (current === 0) {
+        showToast('🔇 Volumen en 0 — sube el volumen para escuchar', 4000);
+      }
+    }
+
     // Solo detener otros audios, no el actual
     const currentKey = `${section}_${lang}`;
     this.audioMap.forEach((audio, key) => {
@@ -486,6 +514,53 @@ const dom = {
 };
 
 // ============================================
+// CARGADOR LAZY DE SECCIONES HTML
+// ============================================
+const sectionLoader = {
+  loaded: new Set(),
+
+  /**
+   * Carga una sección desde assets/sections/<id>.html usando el puente Android.
+   * Inyecta el HTML en #section-content y configura sus botones de audio.
+   * Retorna true si tuvo éxito (o ya estaba cargada), false si falló.
+   */
+  load(sectionId) {
+    if (this.loaded.has(sectionId)) return true;
+
+    if (typeof AndroidAudio === 'undefined' || typeof AndroidAudio.readAsset !== 'function') {
+      showToast('Error: interfaz nativa no disponible');
+      return false;
+    }
+
+    const html = AndroidAudio.readAsset(`sections/${sectionId}.html`);
+    if (!html || html.length === 0) {
+      showToast('No se pudo cargar la sección');
+      return false;
+    }
+
+    const container = dom.get('section-content');
+    container.insertAdjacentHTML('beforeend', html);
+
+    // Animación de entrada en la primera carga
+    const newEl = dom.get(`${sectionId}-content`);
+    if (newEl) {
+      newEl.classList.add('section-new');
+      newEl.addEventListener('animationend', () => newEl.classList.remove('section-new'), { once: true });
+    }
+
+    // Configurar botones de audio de esta sección
+    const audioSections = CONFIG.sectionAudioMap[sectionId] || [];
+    audioSections.forEach(s => setupAudioButton(s));
+
+    // Inicializar pestañas que haya en esta sección
+    initializeTabs();
+
+    this.loaded.add(sectionId);
+    return true;
+  }
+};
+
+// ============================================
 // IDIOMA Y TEMA
 // ============================================
 function getCurrentLanguage() {
@@ -507,6 +582,10 @@ function setLanguage(lang) {
 
 function setDarkMode(isDark) {
   document.body.classList.toggle('dark-mode', isDark);
+  const toggle = dom.get('dark-mode-toggle');
+  if (toggle) {
+    toggle.querySelector('.emoji-icon').textContent = isDark ? '☀️' : '🌙';
+  }
   try { localStorage.setItem('ampara-dark-mode', isDark); } catch(e) {}
 }
 
@@ -545,21 +624,24 @@ const navigation = {
   },
 
   toSection(sectionId) {
-    // Guardar posición actual del scroll del menú
     scrollManager.saveMenuScroll();
-    
-    // Preparar secciones
+
+    // Cargar la sección si aún no está en el DOM
+    if (!dom.get(`${sectionId}-content`)) {
+      const ok = sectionLoader.load(sectionId);
+      if (!ok) return; // showToast ya fue llamado dentro de load()
+    }
+
+    // Mostrar solo la sección solicitada
     CONFIG.sectionMap.forEach(id => {
       const el = dom.get(`${id}-content`);
       if (el) el.classList.toggle('hidden', id !== sectionId);
     });
-    
-    // Ocultar lista y mostrar sección
+
     dom.get('sections-list').classList.add('hidden');
     dom.get('section-content').classList.remove('hidden');
     dom.get('back-btn').classList.remove('hidden');
-    
-    // Resetear scroll del contenedor principal
+
     scrollManager.resetMainScroll();
   }
 };
@@ -653,8 +735,6 @@ window.toggleEmergencyDropdown = toggleEmergencyDropdown;
 // INICIALIZACIÓN
 // ============================================
 function initializeApp() {
-  console.log('Inicializando Ampara...');
-  
   let savedLang = 'es';
   let savedDarkMode = false;
   
@@ -713,16 +793,8 @@ function initializeApp() {
     }
   });
   
-  // Inicializar pestañas
-  initializeTabs();
+  // Las pestañas y botones de audio se inicializan al cargar cada sección (lazy loading)
   
-  // Configurar todos los botones de audio
-  CONFIG.audioSections.forEach(section => {
-    setupAudioButton(section);
-  });
-  
-  console.log('✅ Ampara inicializado correctamente');
-  console.log('📊 Historial de audio cargado:', audioManager.getHistory().length, 'entradas');
 }
 
 // Inicializar cuando el DOM esté listo
@@ -743,7 +815,6 @@ function initializeContactModal() {
   // Abrir modal
   if (contactBtn && modal) {
     contactBtn.addEventListener('click', () => {
-      console.log('Abriendo modal de contacto');
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
@@ -752,7 +823,6 @@ function initializeContactModal() {
   // Cerrar modal con botón X
   if (closeBtn && modal) {
     closeBtn.addEventListener('click', () => {
-      console.log('Cerrando modal');
       modal.classList.remove('active');
       document.body.style.overflow = '';
     });
@@ -762,7 +832,6 @@ function initializeContactModal() {
   if (modal) {
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
-        console.log('Cerrando modal (clic fuera)');
         modal.classList.remove('active');
         document.body.style.overflow = '';
       }
@@ -772,9 +841,41 @@ function initializeContactModal() {
   // Cerrar con ESC
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
-      console.log('Cerrando modal (ESC)');
       modal.classList.remove('active');
       document.body.style.overflow = '';
     }
   });
 }
+
+// ============================================
+// TOAST DE NOTIFICACIÓN (usado por AndroidAudio para errores)
+// ============================================
+function showToast(message, duration = 3000) {
+  const existing = document.getElementById('ampara-toast');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.id = 'ampara-toast';
+  toast.textContent = message;
+  toast.style.cssText = [
+    'position:fixed',
+    'bottom:24px',
+    'left:50%',
+    'transform:translateX(-50%)',
+    'background:rgba(30,30,30,0.9)',
+    'color:#fff',
+    'padding:12px 20px',
+    'border-radius:24px',
+    'z-index:99999',
+    'font-size:14px',
+    'max-width:80%',
+    'text-align:center',
+    'pointer-events:none',
+    'box-shadow:0 4px 12px rgba(0,0,0,0.3)'
+  ].join(';');
+
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), duration);
+}
+
+window.showToast = showToast;

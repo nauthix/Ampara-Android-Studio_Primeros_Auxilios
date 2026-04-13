@@ -15,14 +15,11 @@ android {
         versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary = true
-        }
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -30,25 +27,25 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
-
-    // ❌ ELIMINADO: Bloques buildFeatures, composeOptions, y packaging
 
 }
 
 dependencies {
 
-    // ✅ VISTAS ESENCIALES PARA WEBLVIEW Y APPCOMPATACTIVITY:
-    implementation("androidx.appcompat:appcompat:1.6.1") // Soporte para AppCompatActivity
-    implementation("com.google.android.material:material:1.11.0") // Material Design básico
-    implementation("androidx.core:core-ktx:1.12.0")
+    // Vistas esenciales para WebView y AppCompatActivity:
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.activity:activity-ktx:1.9.3")
 
-    // ❌ ELIMINADO: Todas las dependencias de Compose (activity-compose, compose-bom, ui, material3, etc.)
+    // Splash Screen API nativa (Android 12+, con compatibilidad hacia atrás)
+    implementation("androidx.core:core-splashscreen:1.0.1")
 
     // Dependencias de testing (déjalas):
     testImplementation("junit:junit:4.13.2")

@@ -12,15 +12,6 @@
     <!-- Permiso para modificar configuraciones de audio (IMPORTANTE PARA VOLUMEN) -->
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
-    <!-- Permisos de almacenamiento (para acceder a assets) -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28"
-        tools:ignore="ScopedStorage" />
-
-    <!-- Permiso para acceder al estado de la red (opcional pero recomendado) -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -29,7 +20,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ampara"
-        android:usesCleartextTraffic="true"
         android:hardwareAccelerated="true"
         tools:targetApi="31">
 
@@ -39,7 +29,8 @@
             android:label="@string/app_name"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:hardwareAccelerated="true"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Ampara.Starting">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

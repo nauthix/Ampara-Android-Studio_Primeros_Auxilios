@@ -2,8 +2,16 @@
 <resources>
 
     <!-- Tema principal de la app -->
-    <style name="Theme.Ampara" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Aquí puedes agregar personalizaciones opcionales -->
+    <style name="Theme.Ampara" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <!-- Tema de la splash screen (se aplica al lanzar la Activity) -->
+    <style name="Theme.Ampara.Starting" parent="Theme.SplashScreen">
+        <!-- Fondo blanco para la splash screen -->
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <!-- Icono centrado: usa el foreground del launcher -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <!-- Transición al tema real después del splash -->
+        <item name="postSplashScreenTheme">@style/Theme.Ampara</item>
     </style>
 
 </resources>
