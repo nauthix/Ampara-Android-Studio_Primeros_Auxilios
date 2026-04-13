@@ -80,7 +80,7 @@ Puedes hacer un fork del repositorio y enviar un pull request.
 
 ## 📄 Licencia
 
-Este proyecto está bajo la licencia gpl3.
+Este proyecto está bajo la licencia GNU General Public License v3.0.
 
 ---
 
