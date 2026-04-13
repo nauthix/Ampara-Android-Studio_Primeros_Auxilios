@@ -1,0 +1,1219 @@
+            <div id="emergencias-content" class="section-card hidden">
+                <h2 class="section-heading">
+                    <span class="lang-es">Situaciones de Emergencia</span>
+                    <span class="lang-qu">Utqay Yanapana Ruwaykunan</span>
+                    <span class="lang-ay">Anxata Yanapawi Lurawinaka</span>
+                </h2>
+
+                <div class="tab-container">
+                    <div class="tab active" data-tab="infarto">
+                        <span class="lang-es">Infarto</span>
+                        <span class="lang-qu">Sunqu nanay</span>
+                        <span class="lang-ay">Chuyma usuntañ</span>
+                    </div>
+                    <div class="tab" data-tab="asfixia">
+                        <span class="lang-es">Asfixia</span>
+                        <span class="lang-qu">Samay hark'ay</span>
+                        <span class="lang-ay">Samaña jan'ichi</span>
+                    </div>
+                    <div class="tab" data-tab="desmayo">
+                        <span class="lang-es">Desmayo</span>
+                        <span class="lang-qu">Ch'usaqyay</span>
+                        <span class="lang-ay">Ch'usaqyañ</span>
+                    </div>
+                    <div class="tab" data-tab="convulsiones">
+                        <span class="lang-es">Convulsiones</span>
+                        <span class="lang-qu">Khuya khuya</span>
+                        <span class="lang-ay">Khuya khuya</span>
+                    </div>
+                    <div class="tab" data-tab="sangrado-nasal">
+                        <span class="lang-es">Sangrado Nasal</span>
+                        <span class="lang-qu">Sinqa yawar lluqsiy</span>
+                        <span class="lang-ay">Sinqa wila mistuña</span>
+                    </div>
+                    <div class="tab" data-tab="intoxicacion">
+                        <span class="lang-es">Intoxicación por drogas o estado etílico</span>
+                        <span class="lang-qu">Aqha utaq dawa maqanakuy</span>
+                        <span class="lang-ay">Aqha janiwa yaqha uñachaña (drogas) ch'ajjwawi</span>
+                    </div>
+
+                </div>
+
+                <div id="infarto-tab" class="tab-content">
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-infarto-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Infarto</span>
+                            <span class="lang-qu">Sunqu unquy Waqyachiy</span>
+                            <span class="lang-ay">Chuyma usu Ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-infarto" class="time-display">0:00</span>
+                            <div id="progress-container-infarto" class="progress-container">
+                                <div id="progress-infarto" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-infarto" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <!-- Banner de advertencia -->
+                    <div class="warning-box mt-4">
+                        <span class="emoji-icon mr-2">⚠️</span>
+                        <h4 class="font-bold mb-2">
+                            <span class="lang-es">EMERGENCIA MÉDICA – EL TIEMPO SALVA VIDAS</span>
+                            <span class="lang-qu">¡UTQAYLLA YANAPAKUY! - Pachaqa kawsaytan qispichin</span>
+                            <span class="lang-ay">¡JANK'AKI YANAPAM! - Tiempox jakäwi qhispiyi</span>
+                        </h4>
+                    </div>
+
+                    <!-- Síntomas de alerta -->
+                    <div class="info-box mt-4 mx-4 p-4" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; border-radius: 12px;">
+                        <h3 style="font-size: 1.3em; margin-bottom: 15px;">
+                            🚨
+                            <span class="lang-es">SÍNTOMAS DE ALERTA</span>
+                            <span class="lang-qu">Willakuqkuna</span>
+                            <span class="lang-ay">Unancha uñjanaka</span>
+                        </h3>
+                        <p style="line-height: 1.6; margin-bottom: 10px;">
+                            <span class="lang-es">Actúe de inmediato si hay:</span>
+                            <span class="lang-qu">Utqaylla ruway kaykuna kaptin:</span>
+                            <span class="lang-ay">Jank'aki luram akanaka uñjasa:</span>
+                        </p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>
+                                <span class="lang-es">Dolor fuerte en el pecho</span>
+                                <span class="lang-qu">Qhasqupi sinchi nanay</span>
+                                <span class="lang-ay">Chuymat jach'a usu</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Dolor que corre al brazo, cuello o mandíbula</span>
+                                <span class="lang-qu">Nanayqa rikraman, kunkaman otaq k'aqllamanpas mast'arikun</span>
+                                <span class="lang-ay">Usuw ampararu, kunkaru jan ukax k'ak'ar ch'allt'asi</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Falta de aire</span>
+                                <span class="lang-qu">Samay p'itisqa (mana samay atiy)</span>
+                                <span class="lang-ay">Samat p'itita</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Sudor frío, náuseas o mareo</span>
+                                <span class="lang-qu">Chiri humpi, aqtuy muna otaq uma muyuy</span>
+                                <span class="lang-ay">Juyphi humpi, aqtuy munaña jan ukax p'iqit muyuta</span>
+                            </li>
+                        </ul>
+                        <img loading="lazy" src="img/observar.png" class="w-full mt-3" alt="Síntomas de infarto">
+                    </div>
+
+                    <!-- Pasos -->
+                    <div class="info-box mt-6">
+                        <h3 class="subsection-heading">
+                            🆘
+                            <span class="lang-es">QUÉ HACER AHORA</span>
+                            <span class="lang-qu">Kunanpacha ruway</span>
+                            <span class="lang-ay">Jichhapach luraña</span>
+                        </h3>
+
+                        <div class="space-y-4 mt-4">
+
+                            <!-- PASO 1 -->
+                            <div class="step-container">
+                                <div class="flex items-start gap-3">
+                                    <span class="step-number">1</span>
+                                    <h4 class="step-title">
+                                        <span class="lang-es">Llama a emergencias inmediatamente</span>
+                                        <span class="lang-qu">Utqaylla doctorkunata waqyay</span>
+                                        <span class="lang-ay">Jank'akiw doctorunakar jawsam</span>
+                                    </h4>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="step-description lang-es">
+                                        📞 <strong>No esperes a que pase el dolor.</strong>
+                                    </p>
+                                    <p class="step-description lang-qu">
+                                        📞 <strong>Ama nanay pasananta suyaychu.</strong>
+                                    </p>
+                                    <p class="step-description lang-ay">
+                                        📞 <strong>Jan usun pasañapa suyt'amti.</strong>
+                                    </p>
+                                </div>
+                                <img loading="lazy" src="img/llamar2.png" class="w-full mt-3" alt="Llamar a emergencias">
+                            </div>
+
+                            <!-- PASO 2 -->
+                            <div class="step-container">
+                                <div class="flex items-start gap-3">
+                                    <span class="step-number">2</span>
+                                    <h4 class="step-title">
+                                        <span class="lang-es">Sienta a la persona</span>
+                                        <span class="lang-qu">Runata tiyaykachiy</span>
+                                        <span class="lang-ay">Jaqiru qunuyaña</span>
+                                    </h4>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="step-description lang-es">
+                                        🛋️ <strong>Espalda apoyada, rodillas dobladas</strong><br>
+                                        ❌ No la acuestes completamente
+                                    </p>
+                                    <p class="step-description lang-qu">
+                                        🛋️ <strong>Wasanta t'inkispa (apoyaspa) hinaspa qunqurninta sunch'ispa</strong><br>
+                                        ❌ Ama pampamanqa t'isñuychu
+                                    </p>
+                                    <p class="step-description lang-ay">
+                                        🛋️ <strong>Qhipapa ukat qunqurinakapa t'isnuyaña</strong><br>
+                                        ❌ Janiw pampat thaxsuyañäkiti
+                                    </p>
+                                </div>
+                                <img loading="lazy" src="img/SientePersona.png" class="w-full mt-3" alt="Sentar a la persona">
+                            </div>
+
+                            <!-- PASO 3 -->
+                            <div class="step-container">
+                                <div class="flex items-start gap-3">
+                                    <span class="step-number">3</span>
+                                    <h4 class="step-title">
+                                        <span class="lang-es">Afloja la ropa</span>
+                                        <span class="lang-qu">P'achanta paskariy</span>
+                                        <span class="lang-ay">Isipa k'acha-k'achachaña</span>
+                                    </h4>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="step-description lang-es">
+                                        👕 Quita presión del pecho y cuello
+                                    </p>
+                                    <p class="step-description lang-qu">
+                                        👕 Qhasqunpi kunkampi ama mat'isqa kananpaq
+                                    </p>
+                                    <p class="step-description lang-ay">
+                                        👕 Chuymapampi kunkapampi jan ñit'itakañapataki
+                                    </p>
+                                </div>
+                                <img loading="lazy" src="img/descubrir.png" class="w-full mt-3" alt="Aflojar ropa">
+                            </div>
+
+                            <!-- PASO 4 -->
+                            <div class="step-container">
+                                <div class="flex items-start gap-3">
+                                    <span class="step-number">4</span>
+                                    <h4 class="step-title">
+                                        <span class="lang-es">Mantén a la persona despierta</span>
+                                        <span class="lang-qu">Runata rikch'asqata hap'iy</span>
+                                        <span class="lang-ay">Jaqiru sartata uñjaña</span>
+                                    </h4>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="step-description lang-es">
+                                        💬 Habla con calma<br>
+                                        ❌ No comida, ❌ no agua, ❌ no medicamentos
+                                    </p>
+                                    <p class="step-description lang-qu">
+                                        💬 Thasniyllawan rimapayay<br>
+                                        ❌ Ama mikhuyta, ❌ ama unuta, ❌ ama hampita qoychu
+                                    </p>
+                                    <p class="step-description lang-ay">
+                                        💬 Thakhaki parlt'aña<br>
+                                        ❌ Janiw manq'aña, ❌ janiw uma, ❌ janiw qolla churañäkiti
+                                    </p>
+                                </div>
+                                <img loading="lazy" src="img/verificar.png" class="w-full mt-3" alt="Mantener despierta">
+                            </div>
+
+                            <!-- PASO 5 -->
+                            <div class="step-container">
+                                <div class="flex items-start gap-3">
+                                    <span class="step-number">5</span>
+                                    <h4 class="step-title">
+                                        <span class="lang-es">No la dejes sola</span>
+                                        <span class="lang-qu">Amapuni sapallanta saqeychu</span>
+                                        <span class="lang-ay">Janiw sapaki jaytañäkiti</span>
+                                    </h4>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="step-description lang-es">
+                                        🚗 ❌ No permitas que conduzca
+                                    </p>
+                                    <p class="step-description lang-qu">
+                                        🚗 ❌ Ama carrota manejachiychu
+                                    </p>
+                                    <p class="step-description lang-ay">
+                                        🚗 ❌ Janiw auto apnaqayañäkiti
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SI DEJA DE RESPONDER -->
+                    <div class="info-box mt-6 mx-4 p-4" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; border-radius: 12px;">
+                        <h3 style="margin-bottom: 15px;">
+                            🫀
+                            <span class="lang-es">SI DEJA DE RESPONDER</span>
+                            <span class="lang-qu">Mana kutichikuqtinqa</span>
+                            <span class="lang-ay">Jan amuyaskirikitaxa</span>
+                        </h3>
+                        <p style="line-height: 1.6; margin-bottom: 10px;">
+                            <span class="lang-es">Si no respira o no responde:</span>
+                            <span class="lang-qu">Mana samapakuqtinqa:</span>
+                            <span class="lang-ay">Jan samsuskpan jan ukax jan sartankpana:</span>
+                        </p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>
+                                <span class="lang-es">👉 Inicia RCP de inmediato</span>
+                                <span class="lang-qu">👉 RCP utqaylla qallariy</span>
+                                <span class="lang-ay">👉 RCP jank'akiw qalltaña</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Presiona fuerte y rápido el centro del pecho</span>
+                                <span class="lang-qu">Qhasqu chawpipi kallpawan hinaspa usqhaylla mat'iy</span>
+                                <span class="lang-ay">Chuymap taypicharu ch'amampi ukat jank'aki ñit'im</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">No te detengas hasta que llegue ayuda</span>
+                                <span class="lang-qu">Ama sayaychu yanapay chayamunankama</span>
+                                <span class="lang-ay">Jan sayt'asawa yanapt'iri purinkama lurañamawa</span>
+                            </li>
+                        </ul>
+                        <img loading="lazy" src="img/compresiones.png" class="w-full mt-3" alt="RCP - Compresiones">
+                    </div>
+
+                </div>
+
+                <div id="asfixia-tab" class="tab-content hidden">
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-asfixia-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Atragantamiento</span>
+                            <span class="lang-qu">Qalluy Waqyachiy</span>
+                            <span class="lang-ay">Jarq'atata Ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-asfixia" class="time-display">0:00</span>
+                            <div id="progress-container-asfixia" class="progress-container">
+                                <div id="progress-asfixia" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-asfixia" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <!-- Advertencia inicial -->
+                    <div class="warning-box mt-4">
+                        <span class="emoji-icon mr-2">⚠️</span>
+                        <h4 class="font-bold mb-2">
+                            <span class="lang-es">MANIOBRA DE HEIMLICH</span>
+                            <span class="lang-qu">HEIMLICH RUWAY</span>
+                            <span class="lang-ay">HEIMLICH LURAÑA</span>
+                        </h4>
+                        <p class="lang-es">
+                            (Adultos y niños mayores de 1 año)
+                        </p>
+                        <p class="lang-qu">
+                            (Hatun runakunapaq, huk watayuq wawapaq)
+                        </p>
+                        <p class="lang-ay">
+                            (Jilir jaqinakataki, maya mara jila wawanakataki)
+                        </p>
+                    </div>
+
+                    <!-- Cuándo actuar -->
+                    <div class="info-box mt-4 mx-4 p-4" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; border-radius: 12px;">
+                        <h3 style="font-size: 1.3em; margin-bottom: 15px;">
+                            🚨
+                            <span class="lang-es">CUÁNDO ACTUAR</span>
+                            <span class="lang-qu">Hayk'aq ruwana</span>
+                            <span class="lang-ay">Kunawachas luraña</span>
+                        </h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>
+                                <span class="lang-es">❌ No puede hablar</span>
+                                <span class="lang-qu">❌ Mana rimayta atinchu</span>
+                                <span class="lang-ay">❌ Janiw parlirjamäkiti</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">❌ No puede toser</span>
+                                <span class="lang-qu">❌ Mana uhuyta atinchu</span>
+                                <span class="lang-ay">❌ Janiw ukhurjamäkiti</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">❌ No puede respirar</span>
+                                <span class="lang-qu">❌ Mana samayta atinchu</span>
+                                <span class="lang-ay">❌ Janiw samsurjamäkiti</span>
+                            </li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">
+                            <span class="lang-es">👉 Pide a alguien que llame a emergencias de inmediato</span>
+                            <span class="lang-qu">👉 Utqaylla yanapakuyta waqyay</span>
+                            <span class="lang-ay">👉 Jank'aki yanapirinakaru jawsam</span>
+                        </p>
+                    </div>
+
+                    <!-- Si tose fuerte -->
+                    <div class="info-box mt-4 bg-blue-50 text-blue-900 p-4 rounded-lg">
+                        <p class="font-bold">
+                            <span class="lang-es">Si tose fuerte, NO hagas nada. Anímala a seguir tosiendo.</span>
+                            <span class="lang-qu">Sichus kallpawan uhushanman chayqa, ama imatapas ruwaychu. Uhuchallay.</span>
+                            <span class="lang-ay">Sichus ch'amampi ukhuskpaxa, jan imas luramti. Ukhuñapataki ch'amancham.</span>
+                        </p>
+                    </div>
+
+                    <!-- Pasos -->
+                    <div class="info-box mt-6">
+                        <h3 class="subsection-heading">
+                            🆘
+                            <span class="lang-es">QUÉ HACER</span>
+                            <span class="lang-qu">Imaynatataq ruwana</span>
+                            <span class="lang-ay">Kuna lurañasa</span>
+                        </h3>
+
+                        <div class="space-y-4 mt-4">
+
+                            <!-- PASO 1 -->
+                            <div class="step-container">
+                                <div class="flex items-start gap-3">
+                                    <span class="step-number">1</span>
+                                    <h4 class="step-title">
+                                        <span class="lang-es">Colócate detrás</span>
+                                        <span class="lang-qu">Qhepanman sayay</span>
+                                        <span class="lang-ay">Qhipäxaru sayt'aña</span>
+                                    </h4>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="step-description lang-es">
+                                        🤝 Rodéale la cintura<br>
+                                        👶 Si es niño, arrodíllate
+                                    </p>
+                                    <p class="step-description lang-qu">
+                                        🤝 Runapa qhepanman sayay hinaspa wiqawninmanta marq'aykuy<br>
+                                        👶 Wawa kaptinqa qunqurikuy
+                                    </p>
+                                    <p class="step-description lang-ay">
+                                        🤝 Jaqi qhipäxaru sayt'aña, ch'iñupat qhumant'aña<br>
+                                        👶 Wawäspaxa qunqurt'asiñamawa
+                                    </p>
+                                </div>
+                                <img loading="lazy" src="img/ponte atras.png" class="w-full mt-3" alt="Posición detrás">
+                            </div>
+
+                            <!-- PASO 2 -->
+                            <div class="step-container">
+                                <div class="flex items-start gap-3">
+                                    <span class="step-number">2</span>
+                                    <h4 class="step-title">
+                                        <span class="lang-es">Coloca el puño</span>
+                                        <span class="lang-qu">Makiykita churay</span>
+                                        <span class="lang-ay">Amparama churam</span>
+                                    </h4>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="step-description lang-es">
+                                        ✊ Mano cerrada<br>
+                                        📍 Justo encima del ombligo<br>
+                                        Sujeta el puño con la otra mano
+                                    </p>
+                                    <p class="step-description lang-qu">
+                                        ✊ Makiykita t'aqllay (puño)<br>
+                                        📍 Pupunpa aswan patachanman churay<br>
+                                        Huknin makiykiwan mat'iykuy
+                                    </p>
+                                    <p class="step-description lang-ay">
+                                        ✊ Amparama k'uphu (puño) lurasaw<br>
+                                        📍 Kurunpa patacharu churam<br>
+                                        Yaqha amparampixa ñit'int'añamawa
+                                    </p>
+                                </div>
+                                <img loading="lazy" src="img/hacer_puño.jpg" class="w-full mt-3" alt="Hacer puño">
+                            </div>
+
+                            <!-- PASO 3 -->
+                            <div class="step-container">
+                                <div class="flex items-start gap-3">
+                                    <span class="step-number">3</span>
+                                    <h4 class="step-title">
+                                        <span class="lang-es">Presiona</span>
+                                        <span class="lang-qu">Mat'iy</span>
+                                        <span class="lang-ay">Ñit'iña</span>
+                                    </h4>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="step-description lang-es">
+                                        💪 Empuja fuerte y rápido<br>
+                                        ➡️ Hacia adentro y hacia arriba<br>
+                                        🔁 Repite hasta que el objeto salga
+                                    </p>
+                                    <p class="step-description lang-qu">
+                                        💪 Kallpawan hinaspa usqhaylla ukhuman wichaymanpas mat'iy<br>
+                                        🔁 Chayta ruway imapas siminmanta lloqsimunankama
+                                    </p>
+                                    <p class="step-description lang-ay">
+                                        💪 Ch'amampi ukat jank'aki manqharu ukat alayaru ñit'im<br>
+                                        🔁 Ukham lurañamawa imas mistunipankama
+                                    </p>
+                                </div>
+                                <img loading="lazy" src="img/hamblich.jpg" class="w-full mt-3" alt="Presionar">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SI SE DESMAYA -->
+                    <div class="info-box mt-6 mx-4 p-4" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; border-radius: 12px;">
+                        <h3 style="margin-bottom: 15px;">
+                            ⚠️
+                            <span class="lang-es">SI SE DESMAYA</span>
+                            <span class="lang-qu">Sichus pampaman urman</span>
+                            <span class="lang-ay">Jan amuyaskirikitaxa</span>
+                        </h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>
+                                <span class="lang-es">Acuéstala en el suelo</span>
+                                <span class="lang-qu">Pampapi siriykachiy</span>
+                                <span class="lang-ay">Pamparu suma ikthapiyaña</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">🫀 Inicia RCP (solo compresiones)</span>
+                                <span class="lang-qu">🫀 RCP ruway: Qhasqunpi mat'iyta qallariy</span>
+                                <span class="lang-ay">🫀 RCP luraña: Chuymaparu ñit'iñampi qallart'aña</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">👁️ Si ves el objeto en la boca, sácalo con el dedo</span>
+                                <span class="lang-qu">👁️ Sichus imatapas siminpi rikunki chayqa, dedoykiwan horqoy</span>
+                                <span class="lang-ay">👁️ Imatas simipan uñjasta ukhaxa, luk'anampi apsuñamawa</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">❌ No metas los dedos si no ves nada</span>
+                                <span class="lang-qu">❌ Ama dedoykitaqa metiychu mana imatapas rikuspaqa</span>
+                                <span class="lang-ay">❌ Janiw luk'anaka manqharu churañäkiti jan imas uñjasaqa</span>
+                            </li>
+                        </ul>
+                        <img loading="lazy" src="img/compresiones.png" class="w-full mt-3" alt="RCP - Compresiones">
+                    </div>
+
+                    <!-- NOTA FINAL -->
+                    <div class="info-box mt-6 bg-yellow-100 text-yellow-700 p-4 rounded-lg shadow-md">
+                        <h4 class="font-bold mb-3 flex items-center">
+                            <span class="emoji-icon mr-2">💡</span>
+                            <span class="lang-es">RECUERDA</span>
+                            <span class="lang-qu">Ama qonqaychu</span>
+                            <span class="lang-ay">Amtaskiñamawa</span>
+                        </h4>
+                        <p>
+                            <span class="lang-es">Aunque el objeto salga, debe ir al médico para revisión.</span>
+                            <span class="lang-qu">Imapas lloqsimunña chaypas, doctorunamanpunin rinan qhawachikuq.</span>
+                            <span class="lang-ay">Imas mistuñanipankamasa, qolliri ukarupuniw sarnatañapa uñjatäñapataki.</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div id="desmayo-tab" class="tab-content hidden">
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-desmayo-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Desmayo</span>
+                            <span class="lang-qu">Urmay Uyariy</span>
+                            <span class="lang-ay">Jayp'uña Ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-desmayo" class="time-display">0:00</span>
+                            <div id="progress-container-desmayo" class="progress-container">
+                                <div id="progress-desmayo" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-desmayo" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <!-- TÍTULO PRINCIPAL -->
+                    <div class="mt-4 mb-6">
+                        <h3 class="subsection-heading">
+                            <span class="lang-es">Manejo de desmayos (síncope):</span>
+                            <span class="lang-qu">Yuyay chinkaqtin yanapay:</span>
+                            <span class="lang-ay">Jayp'uñat yanapt'aña:</span>
+                        </h3>
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">1</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Coloca a la persona acostada boca arriba</span>
+                                <span class="lang-qu">Runata wasanman pampapi siriykachiy</span>
+                                <span class="lang-ay">Jaqiru qhipäxaru pampat ikthapiyaña</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                🛏️ En el suelo, en superficie plana. No la mantengas de pie.
+                            </p>
+                            <p class="step-description lang-qu">
+                                🛏️ Pampapi, mast'asqa patapi churay. Ama sayachiychu.
+                            </p>
+                            <p class="step-description lang-ay">
+                                🛏️ Pampana, planu patjana. Janiw sayt'ayañäkiti.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/verificar.png" class="w-full mt-3" alt="Acostar boca arriba">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">2</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Eleva las piernas (30 cm)</span>
+                                <span class="lang-qu">Chakinkunata huqariy (30 cm)</span>
+                                <span class="lang-ay">Kayunaka jithsuyaña (30 cm)</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                📐 Levanta las piernas de la persona 30 cm, pon una mochila u objeto firme.
+                            </p>
+                            <p class="step-description lang-qu">
+                                📐 Runapa chakinkunata 30 cm huqariy. Waykuta utaq ima sinchi kaqta churay yanapanaykipaq.
+                            </p>
+                            <p class="step-description lang-ay">
+                                📐 Jaqin kayunaka 30 cm jithsuyañamawa. Walaypa jan ukax kuna ch'ama yänakata uchañamawa.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/elevar_piernas.png" class="w-full mt-3" alt="Elevar piernas">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">3</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Afloja la ropa apretada</span>
+                                <span class="lang-qu">Mat'isqa p'achakunata paskariy</span>
+                                <span class="lang-ay">Ch'iphat p'achanaka jiwirayaña</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                👔 Desajusta corbatas, cinturones, cuellos de camisa o cualquier ropa apretada.
+                            </p>
+                            <p class="step-description lang-qu">
+                                👔 Corbata, chumpi, kunkapi mat'isqa p'achata utaq ima mat'isqa p'achatapas paskariy.
+                            </p>
+                            <p class="step-description lang-ay">
+                                👔 Corbata, chumpi, kunkan ch'iphat p'achanaka jan ukax kuna ch'iphat p'achanaksa kicharaña.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/desajustar.png" class="w-full mt-3" alt="Aflojar ropa">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">4</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Cuando despierte, ayúdala a sentarse lentamente</span>
+                                <span class="lang-qu">Rikch'arimuptinqa, pisi-pisimanta tiyaykachiy</span>
+                                <span class="lang-ay">Sartatapaxa, pisi-pisit qunuyaña</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                            ⏱️ Déjala acostada unos minutos y ayúdala a sentarse lentamente antes de ponerse de pie.
+                            </p>
+                            <p class="step-description lang-qu">
+                                ⏱️ Sirisqata huk iskay minutokunata saqey, chaymanta pisi-pisimanta tiyaykachiy manaraq sayarichispa.
+                            </p>
+                            <p class="step-description lang-ay">
+                                ⏱️ Mä qawqha minutonaka ikisiñ siqaña, ukatxa k'acha-k'achat qunuyañ yanapt'aña janïr sayt'askama.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/ayuda-a_levantar.png" class="w-full mt-3" alt="Ayudar a levantarse">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">5</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Si no responde en un minuto, llama a emergencias.</span>
+                                <span class="lang-qu">Huk minutupi mana rikch'arimuptinqa, utqaylla yanapakuqkunata waqyay.</span>
+                                <span class="lang-ay">Maya minututa jan jaysaspaxa, jank'akiw yanapirinakaru jawsam.</span>
+                            </h4>
+                        </div>
+                        <img loading="lazy" src="img/llamar2.png" class="w-full mt-3" alt="Llamar al 911">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">6</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Verifica respiración y pulso</span>
+                                <span class="lang-qu">Samayninta, sunqunpa takaynintapas qhawariy</span>
+                                <span class="lang-ay">Samsuñapa ukat chuymap lat'iyapa uñjaña</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                👁️ Si no respira o no hay pulso → inicia RCP.
+                            </p>
+                            <p class="step-description lang-qu">
+                                👁️ Mana samaptinqa utaq sunqun mana takaptinqa → RCP ruwayta qallariy.
+                            </p>
+                            <p class="step-description lang-ay">
+                                👁️ Jan samsuskpanxa jan ukax chuymap jan lat'iykpanxa → RCP qalltañamawa.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/RPCverificar.png" class="w-full mt-3" alt="Verificar signos vitales">
+                    </div>
+
+                    <!-- INFORMACIÓN ADICIONAL: Causas comunes -->
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">💡</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Causas comunes de desmayos</span>
+                                    <span class="lang-qu">Imaraykutaq yuyay chinkan</span>
+                                    <span class="lang-ay">Kunats jaqix jayp'i</span>
+                                </h4>
+                                <div class="step-description">
+                                    <ul class="list-disc list-inside space-y-2">
+                                        <li>
+                                            <span class="lang-es"><strong>Calor excesivo y deshidratación</strong> - El cuerpo pierde líquidos</span>
+                                            <span class="lang-qu"><strong>Ancha q'uñi, yaku pisiyay</strong> - Kurpupaq yaku chinkan</span>
+                                            <span class="lang-ay"><strong>Wali junt'u, uma pisiyaña</strong> - Jantiwix uma chhaqhayi</span>
+                                        </li>
+                                        <li>
+                                            <span class="lang-es"><strong>Estar de pie mucho tiempo</strong> - La sangre se acumula en las piernas</span>
+                                            <span class="lang-qu"><strong>Unayta sayay</strong> - Yawarqa chakinkunapi tantakun</span>
+                                            <span class="lang-ay"><strong>Jaya sayt'asiña</strong> - Wilaw kayunakana tantachasi</span>
+                                        </li>
+                                        <li>
+                                            <span class="lang-es"><strong>Ver sangre o escenas impactantes</strong> - Respuesta del sistema nervioso</span>
+                                            <span class="lang-qu"><strong>Yawarta rikuy utaq mancharikuy rikuykunata</strong> - Nervio sistemapa kutichinpaynin</span>
+                                            <span class="lang-ay"><strong>Wila uñjaña jan ukax manchachir uñjatanaka</strong> - Nervio sisteman kutichawipaxa</span>
+                                        </li>
+                                        <li>
+                                            <span class="lang-es"><strong>Dolor intenso o emociones fuertes</strong> - Miedo, estrés o sorpresa</span>
+                                            <span class="lang-qu"><strong>Sinchi nanay utaq kallpasapa sienteykuna</strong> - Mancharikuy, llakikuy utaq muspharkuy</span>
+                                            <span class="lang-ay"><strong>Sinchi usuntaña jan ukax ch'ama sintinaka</strong> - Manchañ, llakisiñ jan ukax muspharkañ</span>
+                                        </li>
+                                        <li>
+                                            <span class="lang-es"><strong>Levantarse muy rápido</strong> - Cambio brusco de posición</span>
+                                            <span class="lang-qu"><strong>Ancha utqayllamanta sayariy</strong> - Usqayllamanta cambio</span>
+                                            <span class="lang-ay"><strong>Wali jank'aki sayt'asiñ</strong> - Jank'aki mayjt'awixa</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ADVERTENCIA -->
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">⚠️</span>
+                            <div class="flex-1">
+                                <h4 class="step-title text-red-600">
+                                    <span class="lang-es">Cuándo buscar ayuda médica urgente</span>
+                                    <span class="lang-qu">Hayk'aqchus utqaylla hampiq yanapata maskana</span>
+                                    <span class="lang-ay">Kunawchas jank'aki qolliri thaqhañasa</span>
+                                </h4>
+                                <div class="step-description">
+                                    <p class="lang-es mb-2">Llama a emergencias inmediatamente si la persona:</p>
+                                    <p class="lang-qu mb-2">Yanapakuyta utqaylla waqyay, sichus runaqa:</p>
+                                    <p class="lang-ay mb-2">Yanapa thaqham jank'aki, sichus jaqix:</p>
+                                    <ul class="list-disc list-inside space-y-2">
+                                        <li>
+                                            <span class="lang-es">No recupera la consciencia en 1 minuto</span>
+                                            <span class="lang-qu">Huk minutupi mana yuyayninman kutimunchu</span>
+                                            <span class="lang-ay">Jan maya minutuna amuyur kutipkchi</span>
+                                        </li>
+                                        <li>
+                                            <span class="lang-es">Se golpeó la cabeza al caer</span>
+                                            <span class="lang-qu">Urmaspa umanta takakun</span>
+                                            <span class="lang-ay">Urmasawa p'iqit jaqatasi</span>
+                                        </li>
+                                        <li>
+                                            <span class="lang-es">Tiene dolor en el pecho o dificultad para respirar</span>
+                                            <span class="lang-qu">Qhasqopi nanayninmi utaq samayqa sasam</span>
+                                            <span class="lang-ay">Jirjana usuntawixa jan ukax samañax ch'amawa</span>
+                                        </li>
+                                        <li>
+                                            <span class="lang-es">Tiene convulsiones</span>
+                                            <span class="lang-qu">Khuyurikuykunayuqmi</span>
+                                            <span class="lang-ay">K'arkhatañanakawixa</span>
+                                        </li>
+                                        <li>
+                                            <span class="lang-es">Está embarazada</span>
+                                            <span class="lang-qu">Wiksayuq kashan</span>
+                                            <span class="lang-ay">Wawampïskiwa</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="convulsiones-tab" class="tab-content hidden">
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-convulsiones-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Convulsiones</span>
+                            <span class="lang-qu">Khatatay Uyariy</span>
+                            <span class="lang-ay">Khuya khuya ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-convulsiones" class="time-display">0:00</span>
+                            <div id="progress-container-convulsiones" class="progress-container">
+                                <div id="progress-convulsiones" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-convulsiones" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Durante una convulsión:</span>
+                        <span class="lang-qu">Khatataqtin:</span>
+                        <span class="lang-ay">Khuya khuya utjaskitapaxa:</span>
+                    </h3>
+
+                    <div class="warning-box">
+                        <span class="emoji-icon mr-2">⚠️</span>
+                        <strong>
+                            <span class="lang-es">NO pongas nada en la boca de la persona</span>
+                            <span class="lang-qu">Runapa siminman AMA imatapas churaychu</span>
+                            <span class="lang-ay">JANIW kunasa lakaruchu uchañamäki</span>
+                        </strong>
+                    </div>
+
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Qué hacer:</span>
+                        <span class="lang-qu">Imataq ruwana:</span>
+                        <span class="lang-ay">Kuna lurañasa:</span>
+                    </h3>
+
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">1</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Mantén la calma y quédate con la persona</span>
+                                    <span class="lang-qu">Thasniyllawan runata yanapay</span>
+                                    <span class="lang-ay">Thaki thaki uñtata jaqimpi qhiparaña</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="img/manten_calma.png" class="w-full" alt="Mantén la calma">
+                    </div>
+
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">2</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Anota la hora de inicio</span>
+                                    <span class="lang-qu">Iman horatachus qallarirqan chayta qhawariy</span>
+                                    <span class="lang-ay">Kuna horatachus qalltayi uk uñjaña</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="img/anota_hora.png" class="w-full" alt="Anota la hora">
+                    </div>
+
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">3</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Aleja objetos peligrosos</span>
+                                    <span class="lang-qu">K'iriq imakunata karuman apay</span>
+                                    <span class="lang-ay">Peligruni yänaka karur jaquntaña</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="img/sacar_peligrosos.png" class="w-full" alt="Alejar objetos peligrosos">
+                    </div>
+
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">4</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Coloca algo suave bajo la cabeza</span>
+                                    <span class="lang-qu">Uman uraman llamp'u imallatapas churay</span>
+                                    <span class="lang-ay">P'iqipa aynacharu llamp'u kuna uchaña</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="img/poner almuada.png" class="w-full" alt="Colocar almohada">
+                    </div>
+
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">5</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Voltea a la persona de lado después de la convulsión</span>
+                                    <span class="lang-qu">Tukukuptinqa ladunman sumaqta t'ikrarispa siriykachiy</span>
+                                    <span class="lang-ay">Tukuyatapaxa jaqiru mä tuqiru k'achachat jaqukiyaña</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="img/posicionar.png" class="w-full" alt="Voltear a la persona de lado">
+                    </div>
+
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Llama a emergencias:</span>
+                        <span class="lang-qu">Utqaylla yanapata mañakuy:</span>
+                        <span class="lang-ay">Jank'aki yanapirinaka jawsam:</span>
+                    </h3>
+
+                    <div class="info-box mt-6">
+                        <span class="emoji-icon mr-2">🚨</span>
+                        <strong>
+                            <span class="lang-es">Situaciones de emergencia:</span>
+                            <span class="lang-qu">Utqaylla yanapata mañakuy:</span>
+                            <span class="lang-ay">Jank'aki yanapirinaka jawsam:</span>
+                        </strong>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>
+                                <span class="lang-es">Dura más de 5 minutos</span>
+                                <span class="lang-qu">5 minutumanta aswan unay kaptin</span>
+                                <span class="lang-ay">5 minutut sipansa unaypacha sarayaskpan</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Es la primera convulsión</span>
+                                <span class="lang-qu">Ñawpaq kaq kutipi khatataptin</span>
+                                <span class="lang-ay">Nayriri kutïpach ukhaxa</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Se lesiona durante la convulsión</span>
+                                <span class="lang-qu">Khatataspa k'irikuptin</span>
+                                <span class="lang-ay">Khuya khuyaskaspa ch'axwaski ukhaxa</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">No recupera la consciencia</span>
+                                <span class="lang-qu">Mana yuyayninman kutimuptin</span>
+                                <span class="lang-ay">Janiw amuyupar kutinkiti ukhaxa</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- SANGRADO NASAL -->
+                <div id="sangrado-nasal-tab" class="tab-content hidden">
+
+                    <!-- BOTÓN DE AUDIO -->
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-sangrado-nasal-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Sangrado Nasal</span>
+                            <span class="lang-qu">Sinqa yawar lluqsiyta uyariy</span>
+                            <span class="lang-ay">Sinqa wila mistuñata ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-sangrado-nasal" class="time-display">0:00</span>
+                            <div id="progress-container-sangrado-nasal" class="progress-container">
+                                <div id="progress-sangrado-nasal" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-sangrado-nasal" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Sangrado Nasal (Epistaxis)</span>
+                        <span class="lang-qu">Sinqa yawar lluqsiy</span>
+                        <span class="lang-ay">Sinqa wila mistuña</span>
+                    </h3>
+
+                    <!-- ADVERTENCIA -->
+                    <div class="warning-box">
+                        <span class="emoji-icon mr-2">⚠️</span>
+                        <strong>
+                            <span class="lang-es">NO eches la cabeza hacia atrás</span>
+                            <span class="lang-qu">AMA umata qhipaman huqariychu</span>
+                            <span class="lang-ay">JANIW p'iqita qhipäxaru jithsuyañäkiti</span>
+                        </strong>
+                    </div>
+
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Procedimiento:</span>
+                        <span class="lang-qu">Imayna yanapana:</span>
+                        <span class="lang-ay">Lurawinaka:</span>
+                    </h3>
+
+                    <!-- PASO 1 -->
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">1</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Inclina el cuerpo ligeramente hacia adelante</span>
+                                    <span class="lang-qu">Runata asllata ñawpaqman k'umuykachiy</span>
+                                    <span class="lang-ay">Jaqiru mä juk'a nayraqataru k'umuyt'ayaña</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="img/sangre1.png" class="w-full" alt="Inclinación hacia adelante">
+                    </div>
+
+                    <!-- PASO 2 -->
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">2</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Presiona la parte blanda de la nariz durante 10 minutos</span>
+                                    <span class="lang-qu">Sinqapa llamp'u kaqninta chunkaniyuq (10) minuta ñit'iy</span>
+                                    <span class="lang-ay">Sinqa llamp'u tuqita tunka (10) minutoñkama ñit'iña</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="img/sangre2.jpg" class="w-full" alt="Presionar nariz">
+                    </div>
+
+                    <!-- PASO 3 -->
+                    <div class="step-container">
+                        <div class="flex items-start">
+                            <span class="step-number">3</span>
+                            <div class="flex-1">
+                                <h4 class="step-title">
+                                    <span class="lang-es">Coloca algo frío sobre el puente de la nariz</span>
+                                    <span class="lang-qu">Sinqa senqanman chiri imallatapas churay</span>
+                                    <span class="lang-ay">Sinqa taypinkaru chullunkha (thaya) kuna uchaña</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="img/sangre3.png" class="w-full" alt="Compresa fría">
+                    </div>
+
+                    <!-- CUANDO IR AL HOSPITAL -->
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Acude a emergencias si:</span>
+                        <span class="lang-qu">Emergenciaman riy sichus:</span>
+                        <span class="lang-ay">Jank'aki yanapa thaqhaña sichus:</span>
+                    </h3>
+
+                    <div class="info-box mt-6">
+                        <span class="emoji-icon mr-2">🚨</span>
+                        <strong>
+                            <span class="lang-es">Situaciones de emergencia:</span>
+                            <span class="lang-qu">Emergenciaman riy sichus:</span>
+                            <span class="lang-ay">Jank'aki yanapa thaqhaña sichus:</span>
+                        </strong>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>
+                                <span class="lang-es">El sangrado dura más de 20 minutos</span>
+                                <span class="lang-qu">Yawar mana sayaptin iskay chunka (20) minutupi</span>
+                                <span class="lang-ay">Wila mistuña jan sayt'kiti pä tunka (20) minutuna</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Hubo un golpe fuerte en la cabeza o nariz</span>
+                                <span class="lang-qu">Umapi otaq sinqapi sinchi takay kaptin</span>
+                                <span class="lang-ay">P'iqiru jan ukax sinqaru sinchi lunthapi (t'axlli) utjpan</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">La persona está mareada o débil</span>
+                                <span class="lang-qu">Runapa uman muyuptin otaq pisipaptin</span>
+                                <span class="lang-ay">Jaqixa p'iqiw muyuni jan ukax ch'amapa pisiptpan</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Seccion Intoxicacion -->
+                <div id="intoxicacion-tab" class="tab-content hidden p-4">
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-intoxicacion-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto flex items-center justify-center">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Intoxicaciones</span>
+                            <span class="lang-qu">Intoxicación Uyariy</span>
+                            <span class="lang-ay">Intoxicación ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-intoxicacion" class="time-display">0:00</span>
+                            <div id="progress-container-intoxicacion" class="progress-container">
+                                <div id="progress-intoxicacion" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-intoxicacion" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="step-container">
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">🛡️</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Posición de seguridad</span>
+                                <span class="lang-qu">Allin siriykachiy</span>
+                                <span class="lang-ay">Suma ikt'ayaña</span>
+                            </h4>
+                        </div>
+                        <p class="text-sm italic text-gray-600 mt-2">
+                            <span class="lang-es">(Para personas inconscientes o semiinconscientes que respiran)</span>
+                            <span class="lang-qu">(Yuyaynin chinkasqa kaqkunapaq, ichaqa samashaqkunapaq)</span>
+                            <span class="lang-ay">(Jaqinakataki khitinakatix jan amuyunkpacha, ukampis samsuskpaxa)</span>
+                        </p>
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                ⚠️ Coloca a la persona de lado. Esto evita que se ahogue si vomita o tiene secreciones.
+                                Muévela con cuidado, solo si no está totalmente consciente.
+                            </p>
+                            <p class="step-description lang-qu">
+                                ⚠️ Runata ladunman siriykachiy.
+                                Kayqa yanapanmi ama aqtuspa p'itichikunanpaq.
+                                Sumaqllata kuyuchiy, mana allin yuyaypi kaptillan.
+                            </p>
+                            <p class="step-description lang-ay">
+                                ⚠️ Jaqiru mä tuqiru ikt'ayañamawa.
+                                Ukhamatwa jan aqtuxampi p'itichasiñapataki yanapt'i.
+                                K'acha-k'achat unjtayaña, jan amuyupankpach ukhaki.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/posicionar.png" class="w-full mt-3 rounded-lg" alt="Posición lateral segura">
+                    </div>
+
+                    <div class="step-container">
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">🚨</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Cuándo llamar a emergencias</span>
+                                <span class="lang-qu">Hayk'aq yanapata mañakuna</span>
+                                <span class="lang-ay">Kunawachas yanapt'iri jawsaña</span>
+                            </h4>
+                        </div>
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                📞 <strong>Llama de inmediato si la persona:</strong><br>
+                                • No despierta<br>
+                                • Respira lento, irregular o con dificultad<br>
+                                • No puede mantenerse sentada<br>
+                                • Tiene convulsiones<br>
+                                • Vomita repetidamente
+                            </p>
+                            <p class="step-description lang-qu">
+                                📞 <strong>Utqaylla doctorkunata waqyay kaykuna kaptin:</strong><br>
+                                • Mana rikch'arimuptin<br>
+                                • Sasata otaq pisillata samaptin<br>
+                                • Mana tiyayta atiptin<br>
+                                • Khatataptin (convulsiones)<br>
+                                • Sapa kutilla aqtuspa kashaptin
+                            </p>
+                            <p class="step-description lang-ay">
+                                📞 <strong>Jank'akiw doctorunaka jawsam jaqix:</strong><br>
+                                • Jan sartankpa ukhaxa<br>
+                                • Ch'amampi jan ukax pisi-pisit samsuskpa ukhaxa<br>
+                                • Jan qunuñjamäkpach ukhaxa<br>
+                                • Khuya khuyaskpa (k'arkhataski) ukhaxa<br>
+                                • Sapa kuti aqtuskpa ukhaxa
+                            </p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-3">
+                            <img loading="lazy" src="img/manten_calma.png" class="w-full sm:w-1/2 max-w-xs rounded-lg" alt="Síntomas">
+                            <img loading="lazy" src="img/llamar2.png" class="w-full sm:w-1/2 max-w-xs rounded-lg" alt="Llamar emergencias">
+                        </div>
+                    </div>
+
+                    <div class="step-container">
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">👁️</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Qué hacer mientras esperas</span>
+                                <span class="lang-qu">Yanapa chayamunankama ruway</span>
+                                <span class="lang-ay">Yanapt'iri purinkama luraña</span>
+                            </h4>
+                        </div>
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                • Quédate a su lado<br>
+                                • Vigila que siga respirando<br>
+                                • ❌ No le des agua, comida ni medicamentos<br>
+                                • ❌ No provoques el vómito (deja que ocurra solo)
+                            </p>
+                            <p class="step-description lang-qu">
+                                • Ladunpi qhepakuy<br>
+                                • Qhaway sumaqtaraqchus samashan chayta<br>
+                                • ❌ Ama unuta, mikhuyta otaq hampita qoychu<br>
+                                • ❌ Ama aqtuchiychu (pay kikinmanta aqtunanta saqey)
+                            </p>
+                            <p class="step-description lang-ay">
+                                • Jaqi k'atuna qhiparaña<br>
+                                • Samsuskpacha uk uñjañamapuniwa<br>
+                                • ❌ Janiw uma, manq'a jan ukax qollanaka churañäkiti<br>
+                                • ❌ Janiw aqtuyayañäkiti (pa kikipt aqtunapa jaytaña)
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/posicionar.png" class="w-full mt-3 rounded-lg" alt="Supervisión">
+                    </div>
+
+                    <div class="step-container border-2 border-red-500">
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">⛔</span>
+                            <h4 class="step-title text-red-600">
+                                <span class="lang-es">NO hagas esto</span>
+                                <span class="lang-qu">Amapuni kayta ruwaychu</span>
+                                <span class="lang-ay">Janiw akanaka lurañäkiti</span>
+                            </h4>
+                        </div>
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                • ❌ No la dejes sola<br>
+                                • ❌ No uses agua fría<br>
+                                • ❌ No la hagas caminar<br>
+                                👉 Déjala descansando de lado
+                            </p>
+                            <p class="step-description lang-qu">
+                                • ❌ Ama sapallanta saqeychu<br>
+                                • ❌ Ama chiri unuwan qallpuychu<br>
+                                • ❌ Ama purichiychu<br>
+                                👉 Ladunman sirisqata samarichiy
+                            </p>
+                            <p class="step-description lang-ay">
+                                • ❌ Janiw sapaki jaytañäkiti<br>
+                                • ❌ Janiw thaya umampi usuchayañäkiti<br>
+                                • ❌ Janiw sarnaqayañäkiti<br>
+                                👉 Mä tuqiru ikt'ata samarayaña
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/nohacer.png" class="w-full mt-3 rounded-lg" alt="Advertencia">
+                    </div>
+
+                    <div class="step-container bg-blue-50">
+                        <p class="text-center text-lg font-semibold text-blue-900">
+                            <span class="lang-es">💙 Recuerda: actuar rápido y con calma puede salvar una vida</span>
+                            <span class="lang-qu">💙 Yuyariy: Utqaylla hinaspa thasniyllawan ruwayqa kawsaytan qispichin</span>
+                            <span class="lang-ay">💙 Amtam: Jank'aki ukat thaki thaki lurañax jakäwi qhispiyiwa</span>
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Final intoxicacion -->
+            </div>
+
+            <!-- BOTIQUÍN -->

@@ -1,0 +1,414 @@
+            <div id="quemaduras-content" class="section-card hidden">
+                <h2 class="section-heading">
+                    <span class="lang-es">Tratamiento de Quemaduras</span>
+                    <span class="lang-qu">Ruphasqakuna Hampiy</span>
+                    <span class="lang-ay">Phisqatanaka Qollaña</span>
+                </h2>
+
+                <div class="tab-container">
+                    <div class="tab active" data-tab="quemaduras-leves">
+                        <span class="lang-es">Quemaduras Leves</span>
+                        <span class="lang-qu">Pisi ruphasqa</span>
+                        <span class="lang-ay">Jisk'a phisqata</span>
+                    </div>
+                    <div class="tab" data-tab="quemaduras-graves">
+                        <span class="lang-es">Quemaduras Graves</span>
+                        <span class="lang-qu">Hatun ruphasqa</span>
+                        <span class="lang-ay">Jach'a phisqata</span>
+                    </div>
+                </div>
+
+                <div id="quemaduras-leves-tab" class="tab-content">
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Para quemaduras de primer grado:</span>
+                        <span class="lang-qu">Ñawpaq kaq ruphasqakunapaq:</span>
+                        <span class="lang-ay">Nayriri phisqatanakataki:</span>
+                    </h3>
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-quemaduras-leves-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Quemaduras Leves</span>
+                            <span class="lang-qu">Ruphasqa Hampiy Uyariy</span>
+                            <span class="lang-ay">Thiyata Qullaña Ist'aña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-quemaduras-leves" class="time-display">0:00</span>
+                            <div id="progress-container-quemaduras-leves" class="progress-container">
+                                <div id="progress-quemaduras-leves" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-quemaduras-leves" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">1</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Enfría la quemadura</span>
+                                    <span class="lang-qu">Ruphasqata chiriyachiy</span>
+                                    <span class="lang-ay">Thiyata thayachañamawa</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    💧 Coloca la zona afectada bajo <strong>agua</strong> durante quince minutos. Esto reduce el dolor.
+                                </p>
+
+                                <p class="step-description lang-qu">
+                                    💧 Ruphasqa cheqasta <strong>yakuwan</strong> chunka phisqayuq (15) minutokama mayllay. Kayqa nanaytan pisiyachin.
+                                </p>
+
+                                <p class="step-description lang-ay">
+                                    💧 Thiyata chiqaru <strong>umampi</strong> tunka phisqani minutunakama ch'aqllam. Ukax usuñawa jisk'achayi.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/enfriar.png" class="w-full mt-3" alt="Enfriar la zona afectada">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">2</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Retira objetos ajustados</span>
+                                    <span class="lang-qu">Mat'isqa imakunata horqoy</span>
+                                    <span class="lang-ay">K'askasir yänaka apsuñamawa</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    ⚠️ Quita anillos, relojes, pulseras y ropa suelta <strong>antes de que la zona se inflame</strong>.
+                                    La hinchazón puede hacer que estos objetos corten la circulación.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    ⚠️ Siwichikuna, relojkuna hinaspa p'achakunata <strong>manaraq punkishaptin horqoy</strong>. Punkisqaqa yawar puriyta wisq'achinmanmi.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    ⚠️ Sillunaka, relojonaka ukat p'achanaka <strong>janïra puqurinkasaxa jaqukañamawa</strong>. Puquyiqa wila sarnaqäwiruw jark'aspa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/quitaranillo.png" class="w-full mt-3" alt="Quitar anillo u objetos cerca de la lesión">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">3</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Aplica tratamiento tópico</span>
+                                    <span class="lang-qu">K'iri patapi hampita churay</span>
+                                    <span class="lang-ay">Patan qullaña churaña</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🌿 Aplica <strong>gel de aloe vera</strong> o crema hidratante suave.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🌿 <strong>Sábila (aloe vera)</strong> utaq llamp'u cremawan churay. Kayqa qarata sumaqta yanapan.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🌿 <strong>Aloe vera gel</strong> jan ukax llamp'u qullampiw churañama. Akax janchiruwa yanapt'i.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/aloe.png" class="w-full mt-3" alt="Aplicar pomada">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">4</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Controla el dolor</span>
+                                    <span class="lang-qu">Nanayta sayachiy</span>
+                                    <span class="lang-ay">Usuñ kamachaña</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    💊 Toma analgésicos de venta libre como <strong>paracetamol o ibuprofeno</strong>
+                                    según las indicaciones del envase.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    💊 Nanay pasachiq hampikunata ukyay, <strong>paracetamol utaq ibuprofeno</strong> hina.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    💊 Usuntañ pasayiri qullanaka umañamawa, <strong>paracetamol jan ukax ibuprofeno</strong>.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/analgesicos.png" class="w-full mt-3" alt="Administrar analgésicos">
+                        </div>
+
+                    </div>
+
+                    <div class="warning-box mt-6">
+                        <span class="emoji-icon mr-2">🚫</span>
+                        <strong>
+                            <span class="lang-es">NO uses nunca:</span>
+                            <span class="lang-qu">AMA hayk'aqpas kaykunata churaychu:</span>
+                            <span class="lang-ay">JANIW akanaka uchasiñäkiti:</span>
+                        </strong>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>
+                                <span class="lang-es">Hielo directamente sobre la quemadura</span>
+                                <span class="lang-qu">Chhullita chiqamanta ruphasqapa patanpi</span>
+                                <span class="lang-ay">Chhullixa chiqpacha phisqat patana</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Mantequilla, aceite o pasta dental</span>
+                                <span class="lang-qu">Mantequilla, aceite utaq kiru maqchiq pasta</span>
+                                <span class="lang-ay">Mantequilla, aceite jan ukax laka jaqunt'ir pasta</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Algodón que pueda adherirse</span>
+                                <span class="lang-qu">Algodón k'askakunman</span>
+                                <span class="lang-ay">Algodón k'askasniriwa</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Remedios caseros no comprobados</span>
+                                <span class="lang-qu">Mana yachasqa wasipi hampikuna</span>
+                                <span class="lang-ay">Jan yatir utan qollañanaka</span>
+                            </li>
+                        </ul>
+                        <img loading="lazy" src="img/noaplicar.png" class="w-full max-w-md mx-auto mt-3" alt="No aplicar productos irritantes">
+                    </div>
+                </div>
+
+                <div id="quemaduras-graves-tab" class="tab-content hidden">
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Para quemaduras graves (segundo y tercer grado):</span>
+                        <span class="lang-qu">Hatun ruphasqakunapaq (iskay, kimsa kaq):</span>
+                        <span class="lang-ay">Jach'a thiyatanakataki (payiri, kimbiri):</span>
+                    </h3>
+
+                    <div class="warning-box">
+                        <span class="emoji-icon mr-2">🚨</span>
+                        <strong>
+                            <span class="lang-es">¡IMPORTANTE!</span>
+                            <span class="lang-qu">¡ANCHA CHANIYUQ!</span>
+                            <span class="lang-ay">¡WALI ASKÍ!</span>
+                        </strong>
+                        <span class="lang-es">Llama inmediatamente a emergencia. Las quemaduras graves requieren atención médica urgente.</span>
+                        <span class="lang-qu">Utqaylla yanapakuyta (posta nisqata) waqyay. Doctorpa yanapaynintan usqhaylla munan.</span>
+                        <span class="lang-ay">Jank'aki yanapirinakaru jawsam. Jach'a qullirinakata jank'aki munaspa.</span>
+                    </div>
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-quemaduras-graves-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Quemaduras Graves</span>
+                            <span class="lang-qu">Ruphasqa Llakiy Waqyachiy</span>
+                            <span class="lang-ay">K'añuskaña Jach'a Ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-quemaduras-graves" class="time-display">0:00</span>
+                            <div id="progress-container-quemaduras-graves" class="progress-container">
+                                <div id="progress-quemaduras-graves" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-quemaduras-graves" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+
+                       <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">1</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Aleja del peligro</span>
+                                    <span class="lang-qu">Peligromanta karunchay</span>
+                                    <span class="lang-ay">Peligrumata jark'aqasiña</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🚨 Saca a la persona del fuego y el calor. Asegúrate de que el lugar sea seguro.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🚨 Runata ninamanta usqhaylla horqoy. Mana imapas kananpaq sumaqta qhawariy.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🚨 Jaqixa ninamata jank'aki apjaqaña. Chiqaxa jan imas pasañapataki uñjañamawa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/aleja.png" class="w-full mt-3" alt="Alejar al paciente del peligro">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">2</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Apaga el fuego</span>
+                                    <span class="lang-qu">Ninata wañuchiy</span>
+                                    <span class="lang-ay">Nina jiwayaña</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🔥 Si la ropa arde: detente, tírate al suelo y rueda. También puedes apagar con una manta o prenda gruesa.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🔥 Sichus p'acha ruphanman: sayay, pampaman urmay hinaspa muyuriy. Rakhu mantawanpas wañuchiwaqmi.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🔥 P'achaxa ruphasipana: sayt'aña, pampar jikhxatañamawa ukat muyuntañamawa. Jach'a mantampi jiwayaña.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/apaga.png" class="w-full mt-3" alt="Apagar el fuego">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">3</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">No arranques la ropa pegada</span>
+                                    <span class="lang-qu">Ama k'askasqa p'achata horqoychu</span>
+                                    <span class="lang-ay">Janiw k'askasir p'achar apjaqañäkiti</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    ⛔ Solo quita la ropa suelta. No toques ampollas ni prendas adheridas a la piel.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    ⛔ Ama phuru-phurukunata p'akiychu. Ama qaraman k'askasqa p'achakunata llamiychu.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    ⛔ Janiw phururunaka llamkañäkiti. Janirakiw janchiru k'askasir p'achanaka apjaqañäkiti.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/noquites.png" class="w-full mt-3" alt="No quitar ropa adherida o ampollas">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">4</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Enfría la quemadura</span>
+                                    <span class="lang-qu">Ruphasqata chiriyachiy</span>
+                                    <span class="lang-ay">Phisqata thayachañamawa</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    💧 Usa agua por hasta veinte minutos.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    💧 Unuwan (yakuta) iskay chunka minutokama talliy (churay).
+                                </p>
+                                <p class="step-description lang-ay">
+                                    💧 Umampi pätunka minutonakakama ch'aqllaña.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/enfriar3.png" class="w-full mt-3" alt="Enfriar zona afectada">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">5</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Cubre la herida</span>
+                                    <span class="lang-qu">K'irita pakay</span>
+                                    <span class="lang-ay">K'irixa pakayaña</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🩹 Usa un paño limpio, húmedo y que no se pegue. No uses algodón.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🩹 Ch'uya, humedecisqa hinaspa mana k'askaq phuchkuta (tilla) churay. Ama algodón (utkhu) churaychu.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🩹 Ch'uñu, umäwi ukat jan k'askasiri ch'uñu apnaqaña. Janiw algodón apnaqañäkiti.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/cubrir.png" class="w-full mt-3" alt="Cubrir la herida con tela limpia">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">6</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Evita el shock</span>
+                                    <span class="lang-qu">Llakikuymanta amachay</span>
+                                    <span class="lang-ay">Manchañ jan uñstañapataki</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    ⚠️ Acuesta a la persona, cúbrela con una manta y, si puedes, eleva un poco las piernas.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    ⚠️ Runata siriy, mantawan qatay hinaspa chakinkunata pisillata hoqariy.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    ⚠️ Jaqixa irpayaña, mantampi qataña ukat jisk'akiw kayunaka jithsuyaña.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/tratarshokmanta.png" class="w-full mt-3" alt="Tratar el shock, cubrir con manta">
+                        </div>
+
+                    </div>
+
+                    <div class="warning-box mt-6">
+                        <span class="emoji-icon mr-2">⛔</span>
+                        <strong>
+                            <span class="lang-es">Nunca hagas esto en quemaduras graves:</span>
+                            <span class="lang-qu">Hayk'aqpas AMA kaykunata ruwaychu:</span>
+                            <span class="lang-ay">JANIW akanaka lurañäkiti:</span>
+                        </strong>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>
+                                <span class="lang-es">Aplicar hielo directamente</span>
+                                <span class="lang-qu">Chhullita chiqamanta churay</span>
+                                <span class="lang-ay">Chhullixa chiqpacha churañakiti</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Reventar las ampollas</span>
+                                <span class="lang-qu">Phurukunata p'akiy</span>
+                                <span class="lang-ay">Phururunaka p'akiyaña</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Usar cremas o pomadas sin indicación médica</span>
+                                <span class="lang-qu">Cremanakata doctorpa mana niyninwan churay</span>
+                                <span class="lang-ay">Qollirin jan sapxir crema apnaqaña</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Permitir que la persona coma o beba (puede necesitar anestesia)</span>
+                                <span class="lang-qu">Mikuyta otaq yakuta qoy (anestesia necesitakunman)</span>
+                                <span class="lang-ay">Manq'aña jan ukax umaña churaña (anestesia munaspa)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Fracturas Section -->

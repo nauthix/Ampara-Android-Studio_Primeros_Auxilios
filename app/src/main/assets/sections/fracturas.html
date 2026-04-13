@@ -1,0 +1,492 @@
+            <div id="fracturas-content" class="section-card">
+                <h2 class="section-heading">
+                    <span class="lang-es">Manejo de Fracturas</span>
+                    <span class="lang-qu">T'aqasqakuna Kamachiy</span>
+                    <span class="lang-ay">P'akitanaka Kamachaña</span>
+                </h2>
+                <!-- Pestañas -->
+                <div class="tab-container">
+                    <div class="tab active" data-tab="fracturas-cerradas">
+                        <span class="lang-es">Fracturas Cerradas</span>
+                        <span class="lang-qu">Wisq'asqa T'aqasqa</span>
+                        <span class="lang-ay">Ist'ata P'akita</span>
+                    </div>
+                    <div class="tab" data-tab="fracturas-abiertas">
+                        <span class="lang-es">Fracturas Abiertas</span>
+                        <span class="lang-qu">Kichasqa T'aqasqa</span>
+                        <span class="lang-ay">Jist'ata P'akita</span>
+                    </div>
+                </div>
+
+                <!-- Contenido: Fracturas Cerradas -->
+                <div id="fracturas-cerradas-tab" class="tab-content">
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">🦴 Fractura Cerrada - El hueso está roto pero la piel intacta</span>
+                        <span class="lang-qu">🦴 Wisq'asqa T'aqasqa - Tullu t'aqasqa ichaqa qara mana k'irisqachu</span>
+                        <span class="lang-ay">🦴 Ist'ata P'akita - Ch'aka p'akit ukampis janchiruxa jan ch'axwäkiti</span>
+                    </h3>
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-fracturas-cerradas-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Fracturas Cerradas</span>
+                            <span class="lang-qu">Wisq'asqa T'aqasqa Waqyachiy</span>
+                            <span class="lang-ay">Ist'ata P'akita Ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-fracturas-cerradas" class="time-display">0:00</span>
+                            <div id="progress-container-fracturas-cerradas" class="progress-container">
+                                <div id="progress-fracturas-cerradas" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-fracturas-cerradas" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box mt-6">
+                        <span class="emoji-icon mr-2">✅</span>
+                        <strong>
+                            <span class="lang-es">Ventaja: No hay riesgo directo de infección en el hueso</span>
+                            <span class="lang-qu">Allin: Tullupim mana infección kasqanmantachu</span>
+                            <span class="lang-ay">Suma: Ch'akan janiw infección utjkañapatäkiti</span>
+                        </strong>
+                    </div>
+
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Signos de fractura cerrada:</span>
+                        <span class="lang-qu">Wisq'asqa t'aqasqapa rikch'ayninkkuna:</span>
+                        <span class="lang-ay">Ist'at p'akit uñanchanakapa:</span>
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 mb-6">
+                        <li>
+                            <span class="lang-es">Dolor intenso</span>
+                            <span class="lang-qu">Sinchi nanay</span>
+                            <span class="lang-ay">Wali usuntañ</span>
+                        </li>
+                        <li>
+                            <span class="lang-es">Hinchazón y moretones</span>
+                            <span class="lang-qu">Punsiy, yana punkariy</span>
+                            <span class="lang-ay">Punsiyañ, ch'iyar punkarañ</span>
+                        </li>
+                        <li>
+                            <span class="lang-es">Deformidad visible</span>
+                            <span class="lang-qu">Mana allin rikuriq</span>
+                            <span class="lang-ay">Mä allin uñakipan</span>
+                        </li>
+                        <li>
+                            <span class="lang-es">Incapacidad para mover o usar el área</span>
+                            <span class="lang-qu">Chay cheqasmanqa kuyurichiy utaq servichiy mana atiy</span>
+                            <span class="lang-ay">Ukjawa kuyuyañ jan ukax apnaqañ mä yatiña</span>
+                        </li>
+                    </ul>
+
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Procedimiento para fracturas cerradas:</span>
+                        <span class="lang-qu">Wisq'asqa t'aqasqakunaman ruwaykuna:</span>
+                        <span class="lang-ay">Ist'at p'akitanakataki lurawinaka:</span>
+                    </h3>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">1</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">No mover la extremidad</span>
+                                <span class="lang-qu">Ama extremidadta kuyuchiychu</span>
+                                <span class="lang-ay">Janiw extremidad kuyuyañäkiti</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                ⚠️ Mantén a la persona quieta. <strong>Mover puede causar más daño.</strong>
+                            </p>
+                            <p class="step-description lang-qu">
+                                ⚠️ Runata mana kuyurichiy. <strong>Kuyurichiyqa aswan nanaywan tukupunman.</strong>
+                            </p>
+                            <p class="step-description lang-ay">
+                                ⚠️ Jaqi jan kuyuyañapa. <strong>Kuyuyañaxa juk'amp usutata puririnrakiwa.</strong>
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/Fracturanomover.png" class="w-full mt-3" alt="No mover la fractura">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">2</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Inmovilizar con férulas</span>
+                                <span class="lang-qu">Taqlla imatapas churaspa mana kuyurichiy</span>
+                                <span class="lang-ay">Tabla ukanak apasiñasa jan kuyuchiñäkiti</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                Usa tablas, cartón grueso o materiales firmes. Coloca en la <strong>posición encontrada (no enderezar)</strong>.
+                                Ata con vendas sin apretar demasiado.
+                            </p>
+
+                            <p class="step-description lang-qu">
+                                Tablakunata, rakhu qara raphita (cartón) utaq sinchi imaymanakunata servichikuy. <strong>Imaynatas tarirqanki chayllapi churay (ama cheqanchaychu)</strong>.
+                                Vendakunawan watay ama nishuta ñit'ispa.
+                            </p>
+
+                            <p class="step-description lang-ay">
+                                Tablanaka, thuru q'api (cartón) jan ukax ch'ama yänakamp luray. <strong>Kunjamatix jikxatktas ukhamaraki usuchjata churay (jan chiqañchiriti)</strong>.
+                                Vendarapimpi watañawa jan sinti ñit'isa.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/inmobilizarfractura.png" class="w-full mt-3" alt="Inmovilizar fractura con férulas">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">3</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Aplicar hielo</span>
+                                <span class="lang-qu">Chhullita churay</span>
+                                <span class="lang-ay">Chhullisa churañamawa</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                ❄️ Envuelto en un paño, durante quince minutos.
+                            </p>
+
+                            <p class="step-description lang-qu">
+                                ❄️ Chhullunkhayasqa p'achawan p'istusqa, chunka pichqayuq minutokama.
+                            </p>
+
+                            <p class="step-description lang-ay">
+                                ❄️ Khunu thuru mä p'achampi wayt'ata, tunka phisqani minutunakama.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/aplicarhielo.png" class="w-full mt-3" alt="Aplicar hielo">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">4</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Elevar si es posible</span>
+                                <span class="lang-qu">Sichus atiykuwanqa huqariy</span>
+                                <span class="lang-ay">Yatiski ukhaxa jithsuyañamawa</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                Si la fractura está en brazo o pierna, eleva <strong>por encima del corazón</strong>
+                                (si no causa más dolor). Ayuda a reducir hinchazón.
+                            </p>
+                            <p class="step-description lang-qu">
+                                Sichus maki utaq chaki t'aqasqa kanman, <strong>sunqu patanman huqariy</strong>
+                                (sichus mana aswan nanaymanchu). Punsiyninata pisiyachinpaq yanapan.
+                            </p>
+                            <p class="step-description lang-ay">
+                                Ampara jan ukax kayu p'akitki ukhaxa <strong>chuyma patat jithsuyaña</strong>
+                                (jan juk'amp usuntañ puriykchi). Punsiyañ jisk'aptayañatakiw yanapistu.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/elevarherida.png" class="w-full mt-3" alt="Elevar si es posible">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">5</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Vigilar dolor y circulación</span>
+                                <span class="lang-qu">Nanayninata yawar puriynintapas qhawariy</span>
+                                <span class="lang-ay">Usuntañatsa wila sarañatsa uñjañamawa</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                👁️ Observa si la piel cambia de color, la temperatura. Pregunta si siente hormigueo o adormecimiento.
+                            </p>
+
+                            <p class="step-description lang-qu">
+                                👁️ Qhaway qaranpa llimp'in t'ikrakusqanta, chirichus k'asachus kashan chaytawan. Tapuriy: "¿Susunichu?" utaq "¿Sirk'iyachkanchu?" nispa.
+                            </p>
+
+                            <p class="step-description lang-ay">
+                                👁️ Uñjam janchi samipa mayjt'atapatsa, junt'üpatsa. Tapuy: "¿Susuñacha?" jan ukax "¿Sirk'iyächiti?" sasa.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/observar.png" class="w-full mt-3" alt="Observar circulación">
+                    </div>
+
+                </div>
+
+                <!-- Contenido: Fracturas Abiertas -->
+                <div id="fracturas-abiertas-tab" class="tab-content hidden">
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">🩸 Fractura Abierta - El hueso atraviesa la piel (herida + hemorragia)</span>
+                        <span class="lang-qu">🩸 Kichasqa T'aqasqa - Tullu qaramanta lluqsimun (k'iri + yawar)</span>
+                        <span class="lang-ay">🩸 Jist'ata P'akita - Ch'akaxa janchirun jithsuya (ch'axwa + wila)</span>
+                    </h3>
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-fracturas-abiertas-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Fracturas Abiertas</span>
+                            <span class="lang-qu">Kichasqa T'aqasqa Waqyachiy</span>
+                            <span class="lang-ay">Jist'ata P'akita Ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-fracturas-abiertas" class="time-display">0:00</span>
+                            <div id="progress-container-fracturas-abiertas" class="progress-container">
+                                <div id="progress-fracturas-abiertas" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-fracturas-abiertas" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="warning-box">
+                        <span class="emoji-icon mr-2">🚨</span>
+                        <strong>
+                            <span class="lang-es">¡EMERGENCIA MAYOR - Llama a emergencias inmediatamente!</span>
+                            <span class="lang-qu">¡HATUN EMERGENCIA - ¡Utqhaylla waqyay emergenciasta!</span>
+                            <span class="lang-ay">¡JACH'A EMERGENCIA - ¡Jank’aki yanapiri jawsanixam!!</span>
+                        </strong>
+                        <p class="lang-es">Alto riesgo de infección ósea, hemorragia severa y shock.</p>
+                        <p class="lang-qu">Tullupim hatun infección riesgo, yawar sinchi lluqsiy, mancharikuypas.</p>
+                        <p class="lang-ay">Ch'akan jach'a infección riesgo, wila wali mistuni, manchañpisa.</p>
+                    </div>
+
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Procedimiento para fracturas abiertas (diferente y más urgente):</span>
+                        <span class="lang-qu">Kichasqa t'aqasqakunaman ruwaykuna (hukniray, astawan utqaylla):</span>
+                        <span class="lang-ay">Jist'at p'akitanakataki lurawinaka (mayj chhiqha, juk'ampi jalja):</span>
+                    </h3>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">1</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Llama a Emergencias (SÍ O SÍ)</span>
+                                <span class="lang-qu">Emergenciaman waqyay (ARI UTAQ ARI)</span>
+                                <span class="lang-ay">Emergenciar jawsaña (JISA JISA)</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                ⚠️ <strong>PRIORIDAD ABSOLUTA:</strong> Llama de inmediato a una ambulancia.
+                                Estas lesiones requieren cirugía y antibióticos urgentes. Es la prioridad número uno.
+                            </p>
+                            <p class="step-description lang-qu">
+                                ⚠️ <strong>TUKUY ÑAWPAQ:</strong> Utqayllamanta ambulanciata waqyay.
+                                Kay k'irikunaqa cirugíata antibióticosta utqayllamanta necesitan. Ñawpaq prioridadmi.
+                            </p>
+                            <p class="step-description lang-ay">
+                                ⚠️ <strong>NAYRÏR JACH'A:</strong> Jaljaki ambulanciaru jawsaña.
+                                Uka usuwinakax cirugía antibióticosa jaljaki munapxi. Nayrïr prioridadawa.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/llamar2.png" class="w-full mt-3" alt="Llamar emergencias">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">2</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Detén el sangrado</span>
+                                <span class="lang-qu">Yawar lluqsiyninata sayachiy</span>
+                                <span class="lang-ay">Wila mistuyiri sayarachiña</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                <strong>Presiona firme alrededor de la herida</strong> con un paño limpio.<br>
+                                ⚠️ <strong>IMPORTANTE:</strong> No presiones el hueso que sobresale.
+                            </p>
+                            <p class="step-description lang-qu">
+                                <strong>K'irisqap muyunpaq sinchita ñit'iy</strong> phuchka ch'uyawan.<br>
+                                ⚠️ <strong>CHANIYUQ:</strong> Ama tulluta lluqsisqata ñit'iychu.
+                            </p>
+                            <p class="step-description lang-ay">
+                                <strong>Ch'axwat muyuntax ch'amki ñit'iña</strong> ch'uñu ch'uñampi.<br>
+                                ⚠️ <strong>ASKINAKA:</strong> Janiw ch'akar mistir ñit'añäkiti.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/ppresionarherida.png" class="w-full mt-3" alt="Presionar alrededor de la herida">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">3</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">No toques el hueso</span>
+                                <span class="lang-qu">Ama tulluta llamk'aychu</span>
+                                <span class="lang-ay">Janiw ch'akar llamk'añäkiti</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                ⛔ <strong>NUNCA:</strong> No intentes meter el hueso, no lo limpies y no lo empujes.
+                                Déjalo como está. Solo un médico puede manipularlo.
+                            </p>
+                            <p class="step-description lang-qu">
+                                ⛔ <strong>MANAM HAYK'AQPAS:</strong> Ama tulluta ukhumanqa kutichiy munaychu, ama maqchiychu, ama tanqaychu.
+                                Hina saqiy. Hampiqlla llamk'ayta atinman.
+                            </p>
+                            <p class="step-description lang-ay">
+                                ⛔ <strong>JANIW KUNA PACHÄKI:</strong> Janiw ch'akar manqhankir kutt'ayañ munañäkiti, janiw jaquntañäkiti, janiw tanq'añäkiti.
+                                Ukhama jaytaña. Qollirix ukakiw apnaqañapatxa.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/no tocar fractura2.png" class="w-full mt-3" alt="No tocar el hueso">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">4</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Cubre la zona</span>
+                                <span class="lang-qu">K'irisqata pakay</span>
+                                <span class="lang-ay">Ch'axwa pakayaña</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                Pon una gasa o tela limpia sobre la herida y el hueso <strong>sin apretar</strong>.
+                                Esto evita que entren bacterias.
+                            </p>
+                            <p class="step-description lang-qu">
+                                Gasa ch'uya utaq phuchka ch'uya k'irisqaman tulluman churay <strong>mana ñit'ispa</strong>.
+                                Kayqa bacteriasta mana yaykuyta hapin.
+                            </p>
+                            <p class="step-description lang-ay">
+                                Gasa ch'uña jan ukax ch'uñu ch'uña ch'axwaru ch'akaru churañamawa <strong>jan ñit'isax</strong>.
+                                Akax bacteriasar janiw mantañapatakiwa.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/CubrirHueso.png" class="w-full mt-3" alt="Cubrir herida">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">5</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Inmoviliza (Después de cubrir)</span>
+                                <span class="lang-qu">Mana kuyurichiy (Pakasqamanta)</span>
+                                <span class="lang-ay">Jan kuyuchiñäki (Pakayasaxa)</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                Coloca tablillas o soportes a los lados del miembro herido para que no se mueva.<br>
+                                <strong>CUIDADO:</strong> Sujétalas lejos de la herida abierta.
+                            </p>
+                            <p class="step-description lang-qu">
+                                K'irisqa rakinpa kinrankunaman tablakunata churay mana kuyurinanpaq.<br>
+                                <strong>CUIDAKUY:</strong> K'irisqamanta karumanta wataykuy.
+                            </p>
+                            <p class="step-description lang-ay">
+                                Usir tuqinkir tablasa jan ukax yanapir churañamawa jan kuyuñapataki.<br>
+                                <strong>UÑJASIÑAMAWA:</strong> Ch'axwat jayampi wataña.
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/inmobilizarfractura.png" class="w-full mt-3" alt="Inmovilizar fractura">
+                    </div>
+
+                    <div class="step-container">
+                        <!-- Fila 1: número + título -->
+                        <div class="flex items-start gap-3">
+                            <span class="step-number">6</span>
+                            <h4 class="step-title">
+                                <span class="lang-es">Evita el shock</span>
+                                <span class="lang-qu">Mancharikuyta harkay</span>
+                                <span class="lang-ay">Manchañ jark'aqaña</span>
+                            </h4>
+                        </div>
+                        <!-- Fila 2: texto ancho y visible -->
+                        <div class="mt-2">
+                            <p class="step-description lang-es">
+                                • Acuesta a la persona<br>
+                                • Tápala con una manta<br>
+                                • Elévale las piernas (si no tiene otras lesiones)<br>
+                                • <strong>NO le des comida ni agua</strong><br>
+                                • Háblale para mantener la calma
+                            </p>
+                            <p class="step-description lang-qu">
+                                • Runata uchuchiy<br>
+                                • Mantawan pakay<br>
+                                • Chakirkunata huqariy (mana huk k'irikunachu kaptinqa)<br>
+                                • <strong>AMA mikhuyta nitaq yakuta quychu</strong><br>
+                                • Rimaspa thakchachiy
+                            </p>
+                            <p class="step-description lang-ay">
+                                • Jaqir irptayaña<br>
+                                • Mantar pakayaña<br>
+                                • Kayunaka jithsuyaña (jan mayni usuwinakx utjkchi)<br>
+                                • <strong>JANIW manq'añ ni uma churañäkiti</strong><br>
+                                • Parlkasax sumaruqa amuyt'ayaña
+                            </p>
+                        </div>
+                        <img loading="lazy" src="img/tratarshokmanta.png" class="w-full mt-3" alt="Tratar el shock">
+                    </div>
+
+                    <div class="info-box mt-6">
+                        <span class="emoji-icon mr-2">⚠️</span>
+                        <strong>
+                            <span class="lang-es">Por qué es diferente a una fractura cerrada:</span>
+                            <span class="lang-qu">Imaraykutaq wisq'asqa t'aqasqamanta hukniray:</span>
+                            <span class="lang-ay">Kunatsa ist'at p'akitat mayjawa:</span>
+                        </strong>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>
+                                <span class="lang-es"><strong>Sangrado:</strong> Es lo primero que se atiende (en la cerrada es la inmovilización)</span>
+                                <span class="lang-qu"><strong>Yawar:</strong> Ñawpaqta qhawarina (wisq'asqapiqa mana kuyurichiy)</span>
+                                <span class="lang-ay"><strong>Wila:</strong> Nayrïriw uñjayataña (ist'atankix jan kuyuchiñäki)</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">El riesgo de infección es altísimo porque la herida está abierta</span>
+                                <span class="lang-qu">Infección riesgoqa ancha hatunmi k'iri kichasqa kasqanrayku</span>
+                                <span class="lang-ay">Infección riesgoxa wali jach'awa ch'axwax jist'ataski</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Casi siempre requiere quirófano</span>
+                                <span class="lang-qu">Yaqa tukuy kutipi quirófanota necesitan</span>
+                                <span class="lang-ay">Yaparunakanx quirófano munasiraki</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-box mt-6">
+                    <span class="emoji-icon mr-2">💡</span>
+                    <strong>
+                        <span class="lang-es">Recuerda:</span>
+                        <span class="lang-qu">Yuyariy:</span>
+                        <span class="lang-ay">Amtañamawa:</span>
+                    </strong>
+                    <span class="lang-es">Tras inmovilizar, siempre se debe buscar atención médica lo antes posible.En una fractura cerrada, inmovilizar es lo más importante</span>
+                    <span class="lang-qu">Riqsiykachkanqa, qhawaykuyta llamk’ay. Saqranta q’epurayuq huk pachapi, q’epiykuymi asiy.</span>
+                    <span class="lang-ay">Qalltasipxañapataki, qhawqhañani. Chhixi q’epañataki, qullqañani.</span>
+                </div>
+            </div>
+
+            <!-- Envenenamiento -->

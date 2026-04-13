@@ -1,0 +1,451 @@
+            <div id="heridas-content" class="section-card hidden">
+                <h2 class="section-heading">
+                    <span class="lang-es">Tratamiento de Heridas</span>
+                    <span class="lang-qu">K'irisqakuna Hampiy</span>
+                    <span class="lang-ay">Ch'axwanaka Qollaña</span>
+                </h2>
+
+                <div class="tab-container">
+                    <div class="tab active" data-tab="heridas-leves">
+                        <span class="lang-es">Heridas Leves</span>
+                        <span class="lang-qu">Pisi k'irisqa</span>
+                        <span class="lang-ay">Jisk'a ch'axwa</span>
+                    </div>
+                    <div class="tab" data-tab="heridas-graves">
+                        <span class="lang-es">Heridas Graves</span>
+                        <span class="lang-qu">Hatun k'irisqa</span>
+                        <span class="lang-ay">Jach'a ch'axwa</span>
+                    </div>
+                </div>
+
+                <div id="heridas-leves-tab" class="tab-content">
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Para heridas menores:</span>
+                        <span class="lang-qu">Aslla k'irisqakunapaq:</span>
+                        <span class="lang-ay">Jisk'a ch'axwanakataki:</span>
+                    </h3>
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-heridas-leves-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Heridas Leves</span>
+                            <span class="lang-qu">Heridas Pisiyaq Waqyachiy</span>
+                            <span class="lang-ay">Heridas Jisk'a Ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-heridas-leves" class="time-display">0:00</span>
+                            <div id="progress-container-heridas-leves" class="progress-container">
+                                <div id="progress-heridas-leves" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-heridas-leves" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+
+                    <div class="space-y-4">
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">1</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Lávate bien las manos con agua y jabón</span>
+                                    <span class="lang-qu">Makiykita yakuwan jabonwan allinta maqchikuy</span>
+                                    <span class="lang-ay">Amparanaka umi jabun ukampiwa sumax jaquntaña</span>
+                                </h4>
+                            </div>
+                            <img loading="lazy" src="img/lavadomanos.png" class="w-full mt-3" alt="Lavado de manos">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">2</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Detén el sangrado</span>
+                                    <span class="lang-qu">Yawar lloqsiyninta sayachiy</span>
+                                    <span class="lang-ay">Wila mistuyiri sayarachi</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🩸 Presiona la herida con un paño limpio hasta que deje de sangrar.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🩸 Ch'uya p'achawan k'irita mat'iy yawar sayanankama.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🩸 Ch'uña ch'uñumpi ch'axwa ñit'asa wila mistuyir saykañkama.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/detener.png" class="w-full mt-3" alt="Detener el sangrado">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">3</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Limpia la herida</span>
+                                    <span class="lang-qu">K'irita ch'uyanchay</span>
+                                    <span class="lang-ay">Ch'axwa jaquntaña</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    💦 Lávala suavemente con agua limpia para quitar suciedad.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    💦 Llamp'ullata ch'uya yakuwan mayllay, llapa qhellinkuna lloqsinanpaq.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    💦 Ch'uña umimpi llamp'uki jaquntaña q'añu apsuñataki.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/limpiar.png" class="w-full mt-3" alt="Limpiar la herida">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">4</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Aplica pomada médica, si tienes</span>
+                                    <span class="lang-qu">Hampita churay</span>
+                                    <span class="lang-ay">Qulla churañamawa</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    💊 Pon poca cantidad.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    💊 Hampiyoq kaspaykiqa, aschallata k'iri pataman churay.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    💊 Qulla utjchi ukatxa, jisk'akiwa ch'axwa pataru churañamawa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/pomada.png" class="w-full mt-3" alt="Aplicar pomada">
+                        </div>
+
+                        <div class="step-container">
+                            <!-- Fila 1: número + título -->
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">5</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Cubre la herida</span>
+                                    <span class="lang-qu">K'irita tapay</span>
+                                    <span class="lang-ay">Ch'axwa pakayaña</span>
+                                </h4>
+                            </div>
+                            <!-- Fila 2: texto ancho y visible -->
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🩹 Coloca una venda o curita limpia y cámbiala cada día o si se moja.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🩹 Ch'uya p'istunawan otaq curitawan k'atuy. Sapa p'unchay cambiay, otaq hoq'o kaptinpas.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🩹 Ch'uña vendar curita churañamawa. Sapa uru mayjt'ayaña jan ukax um jayawchi ukatxa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/venda.png" class="w-full mt-3" alt="Colocar la venda">
+                        </div>
+
+                    </div>
+
+                    <div class="warning-box mt-6">
+                        <span class="emoji-icon mr-2">⚠️</span>
+                        <strong>
+                            <span class="lang-es">Busca atención médica si:</span>
+                            <span class="lang-qu">Hampiqman utqaylla riy kaykuna kaptin:</span>
+                            <span class="lang-ay">Qolläwiru saramawa uka pachaxa:</span>
+                        </strong>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>
+                                <span class="lang-es">Es una mordedura de animal</span>
+                                <span class="lang-qu">Uywa khanisusqaptiki</span>
+                                <span class="lang-ay">Animalan k'itxiriskanawa</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Hay algo incrustado</span>
+                                <span class="lang-qu">Ima k'iskanpas k'iri ukhupi kashaptin</span>
+                                <span class="lang-ay">Yänakax ch'axwan manq'haratäki</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Ves enrojecimiento, hinchazón o pus</span>
+                                <span class="lang-qu">Pukanayashan, punkishan otaq q'eyachakunpas</span>
+                                <span class="lang-ay">Wila, puqu, ch'ulla uñjata</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">El sangrado no se detiene después de 10 minutos</span>
+                                <span class="lang-qu">Chunka minutos pasasqanmanpas yawar mana sayaqtin</span>
+                                <span class="lang-ay">Wila mistuynix janiw sayt'kiti 10 minutu ñit'asaxa</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+               <div id="heridas-graves-tab" class="tab-content hidden">
+                    <h3 class="subsection-heading">
+                        <span class="lang-es">Cómo actuar ante una herida grave</span>
+                        <span class="lang-qu">Hatun K'iripi Yanapay</span>
+                        <span class="lang-ay">Jach'a ch'axwanakana yanapt'aña</span>
+                    </h3>
+
+                    <div class="warning-box">
+                        <span class="emoji-icon mr-2">🚨</span>
+                        <strong>
+                            <span class="lang-es">Primero y siempre:</span>
+                            <span class="lang-qu">Ñawpaqta hinaspa sapa kutin:</span>
+                            <span class="lang-ay">Nayraqata ukat sapa kutiwa:</span>
+                        </strong>
+                        <span class="lang-es">Llama a emergencias de inmediato.</span>
+                        <span class="lang-qu">Utqaylla yanapakuyta waqyay.</span>
+                        <span class="lang-ay">Jank'aki ch'usañanakaru jawsam.</span>
+                    </div>
+
+                    <div class="audio-player-container w-full my-4">
+                        <!-- Botón de reproducción -->
+                        <button id="play-heridas-graves-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 w-full sm:w-auto">
+                            <span class="emoji-icon mr-2">▶️</span>
+                            <span class="lang-es">Reproducir Heridas Graves</span>
+                            <span class="lang-qu">Hatun K'irisqa Waqyachiy</span>
+                            <span class="lang-ay">Jach'a Ch'axwa Ist'ayaña</span>
+                        </button>
+
+                        <!-- Barra de progreso -->
+                        <div class="audio-progress-wrapper mt-2">
+                            <span id="current-time-heridas-graves" class="time-display">0:00</span>
+                            <div id="progress-container-heridas-graves" class="progress-container">
+                                <div id="progress-heridas-graves" class="progress-bar"></div>
+                            </div>
+                            <span id="duration-heridas-graves" class="time-display">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+
+                        <div class="step-container">
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">1</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Lávate las manos y ponte guantes</span>
+                                    <span class="lang-qu">Makiykita maqchikuy hinaspa guantesta churakuy</span>
+                                    <span class="lang-ay">Amparanaka jaquntañamawa ukat guantes uchantaña</span>
+                                </h4>
+                            </div>
+                            <img loading="lazy" src="img/lavadomanos.png" class="w-full mt-3" alt="Lavado de manos">
+                        </div>
+
+                        <div class="step-container">
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">2</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Controla el sangrado</span>
+                                    <span class="lang-qu">Yawarta sayachiy</span>
+                                    <span class="lang-ay">Wila mistuyiri kamachaña</span>
+                                </h4>
+                            </div>
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🩸 Presiona la herida con un paño limpio. Presiona firme y constante. No la sueltes hasta que el sangrado disminuya.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🩸 Ch'uya p'achawan k'irita mat'iy. Kallpawan hinaspa mana saqespa mat'iy, yawar pisiyanankama.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🩸 Ch'uña ch'uñumpi ch'axwa ñit'asa. Sinchita ukat jan sayt'asisa ñit'aña, wila jisk'achañkama.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/presionherida.jpg" class="w-full mt-3" alt="Presionar la herida">
+                        </div>
+
+                        <div class="step-container">
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">3</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Eleva la herida</span>
+                                    <span class="lang-qu">K'irita hoqariy</span>
+                                    <span class="lang-ay">Ch'axwa jithsuyaña</span>
+                                </h4>
+                            </div>
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    ⬆️ Acuesta a la persona. Eleva la zona herida por encima del corazón si puedes.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    ⬆️ Onqosqata siriykachiy. K'irisqa parteta sonqonmanta aswan altoman hoqariy.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    ⬆️ Jaqixa irpasi. Ch'axwa chuyma patat jithsuyaña yatkchi ukatxa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/elevarherida.png" class="w-full mt-3" alt="Elevar la herida">
+                        </div>
+
+                        <div class="step-container">
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">4</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Si el corte es profundo: usa tiras adhesivas</span>
+                                    <span class="lang-qu">K'iri ukhu kaptin: k'iri mat'inawan churay</span>
+                                    <span class="lang-ay">Ch'axwax manqha chi ukatxa: liq'ichir chimpunaka apnaqaña</span>
+                                </h4>
+                            </div>
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    📌 Colócalas cruzando el corte. Une los bordes sin estirar la piel.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    📌 K'iri patankunata hukllachay mana qarayta chutaspalla.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    📌 Kantinaka mayacht'aña jani janchipa aystasa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/para heridas graves.png" class="w-full mt-3" alt="Tiras adhesivas para heridas">
+                        </div>
+
+                        <div class="step-container">
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">5</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Venda la herida</span>
+                                    <span class="lang-qu">K'irita p'istuy</span>
+                                    <span class="lang-ay">Ch'axwa vendar pakayaña</span>
+                                </h4>
+                            </div>
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🩹 Cubre con una venda limpia. No quites la anterior venda. Debe estar firme, pero sin cortar la circulación. Los dedos deben verse rosados y calientes.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🩹 Ch'uya p'istunawan k'atuy. Ama ñawpaq churaykusqayki p'achata horqoychu. P'istunaqa mat'isqa kanan, yawar purinanpaq hina. Rukanakunaqa puka q'uñillataq kanan.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🩹 Ch'uña vendar pakayaña. Janiw nayrïr vendar apsuñakiti. Sinchïñapawa, jan ukax janiw wila sarnaqañ wiskhañapakiti. Liqitanakax wila ukat junt'u uñstasiñapawa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/Envuelve_herida.png" class="w-full mt-3" alt="Envolver la herida">
+                        </div>
+
+                        <div class="step-container">
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">6</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Mantén la calma</span>
+                                    <span class="lang-qu">Ama mancharikuychu</span>
+                                    <span class="lang-ay">Sumaqa amuyt'asiña</span>
+                                </h4>
+                            </div>
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    😌 Habla con voz tranquila. Mantén a la persona despierta y quieta.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    😌 Llamp'u kunkallawan rimapayay. Onqosqata rikch'asqata hinaspa tiyayisqata kachiy.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    😌 Suma arsumpi aruskipt'aña. Jaqixa uñstata ukat jan kuyusisa imañapa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/calmar.png" class="w-full mt-3" alt="Calmar al paciente">
+                        </div>
+
+                        <div class="step-container">
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">7</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Mantén el calor</span>
+                                    <span class="lang-qu">Q'uñichiy</span>
+                                    <span class="lang-ay">Junt'uñapa imañapa</span>
+                                </h4>
+                            </div>
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    🛏️ Cúbrela con mantas o ropa. El shock puede causar pérdida rápida de calor.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    🛏️ Mantawan otaq p'achawan p'istuy. Cuerpon chiriyaptinqa usqhaylla p'istuna.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    🛏️ Phawasampi jan ukax isinakampi pakayaña. Shockax jank'aki junt'uñap chhaqtayaspawa.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/tratarshokmanta.png" class="w-full mt-3" alt="Mantener el calor">
+                        </div>
+
+                        <div class="step-container">
+                            <div class="flex items-start gap-3">
+                                <span class="step-number">8</span>
+                                <h4 class="step-title">
+                                    <span class="lang-es">Vigila signos de shock</span>
+                                    <span class="lang-qu">Unanchakunata qaway</span>
+                                    <span class="lang-ay">Shock uñanchanakar uñjaña</span>
+                                </h4>
+                            </div>
+                            <div class="mt-2">
+                                <p class="step-description lang-es">
+                                    ⚠️ Palidez, sudor frío, respiración rápida o confusión. Si aparecen, es una urgencia.
+                                </p>
+                                <p class="step-description lang-qu">
+                                    ⚠️ Uyan yuraqayan, chiri humpin, usqhayta samaykun otaq umampas muyun. Kaykuna kaptinqa, utqaylla hampiqman apay.
+                                </p>
+                                <p class="step-description lang-ay">
+                                    ⚠️ Janq'u, thaya jithintata, jank'aki samsuña jan ukax pantjata. Uñstchi ukatxa, jank'akiw qhanañataki.
+                                </p>
+                            </div>
+                            <img loading="lazy" src="img/observar.png" class="w-full mt-3" alt="Observar evolución de la herida">
+                        </div>
+
+                    </div>
+
+                    <div class="warning-box mt-6">
+                        <span class="emoji-icon mr-2">⚠️</span>
+                        <strong>
+                            <span class="lang-es">Si hay un objeto incrustado:</span>
+                            <span class="lang-qu">Ima k'iskanpas k'iri ukhupi kaptin:</span>
+                            <span class="lang-ay">Yänakax manq'haratäki ukataxa:</span>
+                        </strong>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>
+                                <span class="lang-es">NO lo retires</span>
+                                <span class="lang-qu">AMA horqoychu</span>
+                                <span class="lang-ay">JANIW apsukañakiti</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">NO presiones sobre él</span>
+                                <span class="lang-qu">AMA patanta mat'iychu</span>
+                                <span class="lang-ay">JANIW pataru ñit'añakiti</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Fíjalo con vendajes alrededor</span>
+                                <span class="lang-qu">Muyuriqnillanta p'istuspa sumaqta sayachiy</span>
+                                <span class="lang-ay">Muyurjankir vendar jan unxtayañapataki luraña</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">No permitas comer, beber ni fumar</span>
+                                <span class="lang-qu">Ama imatapas mikuchiychu, ukyachiychu, nitaq sayachiychu</span>
+                                <span class="lang-ay">JANIW manq'añasa, umañasa ni q'uwuñakiti</span>
+                            </li>
+                            <li>
+                                <span class="lang-es">Espera a emergencias</span>
+                                <span class="lang-qu">Yanapakuy chayamunankama suyay</span>
+                                <span class="lang-ay">Emergencia yanapt'irinakar suyaña</span>
+                            </li>
+                        </ul>
+                        <img loading="lazy" src="img/noremover.png" class="w-full max-w-md mx-auto mt-3" alt="No remover objetos incrustados">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quemaduras Section -->
